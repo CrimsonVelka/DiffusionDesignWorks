@@ -1,4 +1,7 @@
-
+---
+title: Diffusion Design Works
+template: index.html
+---
 
 # Welcome to Diffusion Design Works
 
