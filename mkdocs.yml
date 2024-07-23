@@ -28,15 +28,18 @@ theme:
   plugins:
     - typeset
     - search
+    - glightbox
     - blog:
       enabled: false
       blog_toc: true
+    - mkdocs-video
 
   markdown_extensions:
     - admonition
     - pymxdownx.details
     - pymdownx.superfences
     - attr_list
+    - md_in_html
     - pymdownx.emoji:
         emoji_index: !!python/name:material.extensions.emoji.twemoji 
         emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -54,14 +57,6 @@ theme:
 
   palette:
 
-    #Toggle Light Theme
-    - scheme: default
-      toggle:
-        icon: material/toggle-switch-off-outline 
-        name: Switch to dark mode
-      primary: blue grey
-      accent: blue 
-    
     #Toggle Dark Theme
     - scheme: slate 
       toggle:
@@ -69,6 +64,14 @@ theme:
         name: Switch to light mode    
       primary: black
       accent: blue
+    
+    #Toggle Light Theme
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: blue grey
+      accent: blue     
 
 nav:
   - Home: index.md
