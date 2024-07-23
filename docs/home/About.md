@@ -21,16 +21,16 @@ Studio Ufotable theme Stable Diffusion 1 Based Model
 
 *Standard Text 2 Image Generation*
 
-![](.\images\104188-2819849585.png){: style="width:49.5%"}
-![](.\images\107011-4194903623.png){: style="width:49.5%"}
-![](.\images\107115-3621427120.png){: style="width:49.5%"}
-![](.\images\107574-2339296326.png){: style="width:49.5%"}
+![](./images/104188-2819849585.png){: style="width:49.5%"}
+![](./images/107011-4194903623.png){: style="width:49.5%"}
+![](./images/107115-3621427120.png){: style="width:49.5%"}
+![](./images/107574-2339296326.png){: style="width:49.5%"}
 
 *Img2Img Movie Poster + Inpainting Upscale*
 
-![](.\images\BrotherhoodWolf.png){: style="width:32.5%"}
-![](.\images\00341-100224763.png){: style="width:32.5%"}
-![](.\images\00474-3492909164.png){: style="width:32.5%"}
+![](./images/BrotherhoodWolf.png){: style="width:32.5%"}
+![](./images/00341-100224763.png){: style="width:32.5%"}
+![](./images/00474-3492909164.png){: style="width:32.5%"}
 
 ## T2V Models
 
@@ -38,10 +38,10 @@ Studio Ufotable theme Stable Diffusion 1 Based Model
 
 AnimateDiff Stable Diffusion Plug In to create Text to Video
 
-![](.\images\00109-3896167239.png){: style="width:49.5%"} <iframe src="https://files.catbox.moe/8ts0hn.webm" width= "384" height= "256" frameborder="0"></iframe>
+![](./images/00109-3896167239.png){: style="width:49.5%"} <iframe src="https://files.catbox.moe/8ts0hn.webm" width= "384" height= "256" frameborder="0"></iframe>
 
 
 
-![](.\images\ContactSheet-002.png){: style="width:47.4%"} <iframe src="https://files.catbox.moe/0bef63.webm" width= "400" height= "270" frameborder="0"></iframe>
+![](./images/ContactSheet-002.png){: style="width:47.4%"} <iframe src="https://files.catbox.moe/0bef63.webm" width= "400" height= "270" frameborder="0"></iframe>
 
 AnimateDiff uses the loadded model to generate individual frames that then get joined together into an animation
