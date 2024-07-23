@@ -1,4 +1,5 @@
 site_name: Diffusion Design Works
+site_url: https://crimsonvelka.github.io/DiffusionDesignWorks
 theme:
   name: material
   custom_dir: overrides
@@ -83,7 +84,7 @@ nav:
       - 'Troubleshooting Flaws': udw/flaws.md 
   - Motion Model Diffusion:
       - 'AnimateDiff + UDW': motion/motiondiffusion.md
-  - Closing:
+  #- Closing:
       - 'Lessons Learned': faq/lessonslearned.md
 
 markdown_extensions:
