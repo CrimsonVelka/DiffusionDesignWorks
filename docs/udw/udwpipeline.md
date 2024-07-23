@@ -1,14 +1,17 @@
 icon:material/pipe
-# Modifying the Pipeline and handling unexpected complications
+# Pipeline Workflow: Modifying a preset repo to handle an unexpected developments
 
-Things to note before continuing:
--A standard anime episode of 24 minutes is around 34k frames
--A standard film of 2 hours is around 170k frames
--Each frame when exported through ffmpeg is around 1.5MB-3MBs in size
--This makes the size of frame extractions 300GBs for a single episode and 1.5TB for a movie. 
--Cutting the opening and ending animation off each episode as well as the next episode preview knocks off 195 seconds or 4680 frames, which would be between 7-14GB. Cutting the movie credits removes around 6 minutes or 8,640 frames, or 14-28GB.
--A manually cleaned up episode will come down to about 50GBs in size and a movie will drop to around 600GB 
--Lots of Hard Drive space required
+By the time I trained out several versions of UDW, I got familiar enough with the process where I was able to make changes as needed whenever something would arise in the process. Whether changing up the dataset creation process, or how I was automating the process as I got experienced enough to figure out where I can fit in pieces to reduce my workload. I learned a lot of python along the way and more about the inner workings of model training. As stated before, I got a jump start using [Anime Screenshot Pipeline](https://github.com/cyber-meow/anime_screenshot_pipeline) but ultimately my end result in changing the pipeline workflow looks unrecognizable to even the developer's current version of the process.
+
+??? note
+    
+    -A standard anime episode of 24 minutes is around 34k frames
+    -A standard film of 2 hours is around 170k frames
+    -Each frame when exported through ffmpeg is around 1.5MB-3MBs in size
+    -This makes the size of frame extractions 300GBs for a single episode and 1.5TB for a movie. 
+    -Cutting the opening and ending animation off each episode as well as the next episode preview knocks off 195 seconds or 4680 frames, which would be between 7-14GB. Cutting the movie credits removes around 6 minutes or 8,640 frames, or 14-28GB.
+    -A manually cleaned up episode will come down to about 50GBs in size and a movie will drop to around 600GB 
+    -Lots of Hard Drive space required
 
 ## Frame Extraction 
 The first change I made to the pipeline was the ffmpeg script provided. The Pipeline used a script that would run the mpdecimate command to remove duplicate or “frozen frames”, moments in the animation where there is no movement, as ffmpeg is “extracting” the frames to condense down the frames to a final output around a 10th of the original size. 
