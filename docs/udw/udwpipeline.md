@@ -6,10 +6,15 @@ By the time I trained out several versions of UDW, I got familiar enough with th
 ??? note
     
     -A standard anime episode of 24 minutes is around 34k frames
+    
     -A standard film of 2 hours is around 170k frames
+    
     -Each frame when exported through ffmpeg is around 1.5MB-3MBs in size
+    
     -This makes the size of frame extractions 300GBs for a single episode and 1.5TB for a movie. 
+    
     -Cutting the opening and ending animation off each episode as well as the next episode preview knocks off 195 seconds or 4680 frames, which would be between 7-14GB. Cutting the movie credits removes around 6 minutes or 8,640 frames, or 14-28GB.
+    
     -A manually cleaned up episode will come down to about 50GBs in size and a movie will drop to around 600GB 
     -Lots of Hard Drive space required
 

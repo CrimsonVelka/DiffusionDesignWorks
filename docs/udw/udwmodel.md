@@ -2,7 +2,13 @@ icon:material/ufo-outline
 # Unlimited Diffusion Works (UDW)
 ## Overview
 
-Unlimited Diffusion Works is a model based on the works of animation studio ufotable, whos works including 14 Animated Films, 15 TV Shows, and Opening Animations and Cutscenes for 17 Video Game works for several different franchises, giving a diverse palate of different animators, styles, settings, and subjects while having a recognizable visual finish due to their CGI usage and consistent color grading technique. 
+Unlimited Diffusion Works is a model based on the works of animation studio ufotable, whos works including:
+
+* 14 Animated Films
+* 15 TV Shows 
+* 17 Video Game Opening Animations and Cutscenes
+
+With this much material overarching several different franchises handed by different animators displaying a variety of styles, settings, and characters; while all the works still having the studio's distinct finish, it is a great source of material to make a model that can stay consistent across the board and still make unique images that don't look too much like carbon copies of what it's based on. 
 
 ## Dataset
 
@@ -23,7 +29,7 @@ Lord El-Melloi II Case Files (TV – Studio Troyca)
 *and additional miscellaneous non-animation frame data not from danbooru*
 ```
 
-Dataset was created by running Blu-ray rips of the listed content through ffmpeg as part of the aid of [Anime Screenshot Pipeline](https://github.com/cyber-meow/anime_screenshot_pipeline) on Github back in February of 2023, but I had quickly become dissatisfied with the quality of the dataset it originally produced, and parts of its pipeline were not useful for what I needed, thus I took some tools, repurposed and/or modified settings, and redid the entire dataset after several months of doing initial training tests before committing to an overall.
+Dataset was created by running Blu-ray rips of the listed content through ffmpeg as part of the aid of [Anime Screenshot Pipeline](https://github.com/cyber-meow/anime_screenshot_pipeline) on Github back in February of 2023.
 
 ## Sample Gallery
 
@@ -60,3 +66,8 @@ Dataset was created by running Blu-ray rips of the listed content through ffmpeg
 ![](./images/63291-3832714336.png){: style="width:49.5%"}
 ![](./images/63322-1230264608.png){: style="width:49.5%"}
 ![](./images/63324-2435138676.png){: style="width:49.3%"}
+
+
+## Status Updates
+
+After many trainings however, I had become dissatisfied with the quality of the dataset it originally produced, and didn't even use parts of the for what I needed. Through repurposing and editing some of tools and scripts, I redid the entire dataset from scratch after several months of doing initial training tests before committing to an overall.
