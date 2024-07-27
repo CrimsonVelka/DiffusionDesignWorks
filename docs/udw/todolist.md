@@ -24,6 +24,11 @@ Ongoing quality control of existing dataset:
 
 ## To Do List (Updated 07/2024)
 
+[![](./images/todolist/thumb/Layer-3-Crop.png){: style="width:188px"}](./images/todolist//full/knk6.jpg)
+[![](./images/todolist/thumb/Layer-2-Crop.png){: style="width:188px"}](./images/todolist/full/tozx.jpg)
+[![](./images/todolist/thumb/Layer-1-Crop.png){: style="width:188px"}](./images/todolist/full/ktrfull.jpg)
+[![](./images/todolist/thumb/Layer-4-Crop.png){: style="width:188px"}](./images/todolist/full/tob.png)
+
 Ready to train on next session - minimal manual edits only:
 ```
 *   The Garden of Sinners 3 – Remaining Sense of Pain (Movie)
@@ -39,7 +44,14 @@ Ready to train on next session - minimal manual edits only:
 *   Tales of Crestoria (Mobile – Only Ufotable Drawn Art)
 ```
 ----
-In the pipeline but not ready due to priority or limited hard drive space
+
+In the pipeline but not ready due to priority, not directly ufotable content, or limited hard drive space
+
+[![](./images/todolist/thumb/Layer-5-Crop.png){: style="width:188px"}](./images/todolist//full/tsukire.jpg)
+[![](./images/todolist/thumb/Layer-6-Crop.png){: style="width:188px"}](./images/todolist/full/mahoyofull.png)
+[![](./images/todolist/thumb/Layer-7-Crop.png){: style="width:188px"}](./images/todolist/full/tos.jpg)
+[![](./images/todolist/thumb/Layer-8-Crop.png){: style="width:188px"}](./images/todolist/full/kny.png)
+
 ```
 *   Tales of Zestiria the X (TV - Season 2)
 *   Witch on the Holy Night (VG)
@@ -52,6 +64,7 @@ In the pipeline but not ready due to priority or limited hard drive space
 *   Today's Menu for the Emiya Family
 *   Demon Slayer (TV + Movies)
 ```
+
 ----
 Waiting on USM decryption for the following games to frame extract cutscenes
 ```
@@ -61,7 +74,7 @@ Waiting on USM decryption for the following games to frame extract cutscenes
 Waiting on releases for the following Ufotable Media:
 ```
 *   Witch on the Holy Night (Movie)
-*   Honkai Starrail x Fate Stay Night Unlimited Blade Works (Mobile – Event – 2025)
+*   Honkai Starrail x Fate Stay Night Unlimited Blade Works (Mobile Event)
 *   Untitled Genshin Impact Animation (TV)
 ```
 ----

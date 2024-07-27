@@ -63,15 +63,15 @@ theme:
         icon: material/toggle-switch
         name: Switch to light mode    
       primary: black
-      accent: blue
+      accent: deep orange
     
     #Toggle Light Theme
     - scheme: default
       toggle:
         icon: material/toggle-switch-off-outline 
         name: Switch to dark mode
-      primary: blue grey
-      accent: blue     
+      primary: indigo
+      accent: pink  
 
 nav:
   - Home: index.md

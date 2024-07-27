@@ -14,13 +14,13 @@ One of the issues as to why this never picked up much steam, aside from its inco
 ### AnimateDiff + UDW Examples
 
 
-![](00175-2176596798-RIFE.gif){: style="width:408px"}
-![](00372-1258236320-Flip-RIFE.gif){: style="width:408px"}
+![](00175-2176596798-RIFE.gif){: style="width:381px"}
+![](00372-1258236320-Flip-RIFE.gif){: style="width:381px"}
 
-![](00080-345913690-RIFE.gif){: style="width:202px"}
-![](00106-2140579446-RIFE.gif){: style="width:202px"}
-![](00404-1652022638-RIFE.gif){: style="width:202px"}
-![](00427-2950972036-RIFE.gif){: style="width:202px"}
+![](00080-345913690-RIFE.gif){: style="width:188px"}
+![](00106-2140579446-RIFE.gif){: style="width:188px"}
+![](00404-1652022638-RIFE.gif){: style="width:188px"}
+![](00427-2950972036-RIFE.gif){: style="width:188px"}
 
 *[Reaniamted with Flowframes](https://github.com/n00mkrad/flowframes) - RIFE 4.0 @ 20 FPS*
 
@@ -42,18 +42,18 @@ Services like Luma do have a better quality to their video generations, even whe
 ![](LumaOriginals.png)
 
 *Generated Results for Img2Vid*
-<iframe src="https://files.catbox.moe/csbue6.mp4" width= "410" height= "232" frameborder="0"></iframe>
-<iframe src="https://files.catbox.moe/9zzjt4.mp4" width= "410" height= "232" frameborder="0"></iframe>
-<iframe src="https://files.catbox.moe/4kj2le.mp4" width= "828" height= "460" frameborder="0"></iframe>
-<iframe src="https://files.catbox.moe/uy046a.mp4" width= "410" height= "550" frameborder="0"></iframe>
-<iframe src="https://files.catbox.moe/4on3o8.mp4" width= "410" height= "550" frameborder="0"></iframe>
+<iframe src="https://files.catbox.moe/csbue6.mp4" width= "410" height= "232" frameborder="0" allow="fullscreen"></iframe>
+<iframe src="https://files.catbox.moe/9zzjt4.mp4" width= "410" height= "232" frameborder="0" allow="fullscreen"></iframe>
+<iframe src="https://files.catbox.moe/4kj2le.mp4" width= "828" height= "460" frameborder="0" allow="fullscreen"></iframe>
+<iframe src="https://files.catbox.moe/uy046a.mp4" width= "410" height= "550" frameborder="0" allow="fullscreen"></iframe>
+<iframe src="https://files.catbox.moe/4on3o8.mp4" width= "410" height= "550" frameborder="0" allow="fullscreen"></iframe>
 
 But being restricted to their base model and their training may produce unintended results. Using their enhance prompt feature will deviate from your image almost entirely if your image is based on something the model is not trained on. If you focus exclusively on Text to Video, its not a bad platform, but if you want more control over the content you want to create with what you have, we would have to look else where.
 
 ??? Warning
     ![](106696-3973067177.png){: style="width:783px"}
-        <iframe src="https://files.catbox.moe/rqfivc.mp4" width= "390" height= "215" frameborder="0"></iframe>
-    <iframe src="https://files.catbox.moe/cyiac9.mp4" width= "390" height= "215" frameborder="0"></iframe>
+    <iframe src="https://files.catbox.moe/rqfivc.mp4" width= "390" height= "215" frameborder="0" allow="fullscreen"></iframe>
+    <iframe src="https://files.catbox.moe/cyiac9.mp4" width= "390" height= "215" frameborder="0" allow="fullscreen"></iframe>
     
 ----
 

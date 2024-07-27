@@ -21,14 +21,14 @@ Studio Ufotable themed Stable Diffusion 1.x based model
 
 *Standard Text to Image Generation*
 
-![](./images/104188-2819849585.png){: style="width:400px"}
-![](./images/107011-4194903623.png){: style="width:400px"}
-![](./images/107115-3621427120.png){: style="width:400px"}
-![](./images/107574-2339296326.png){: style="width:400px"}
+[![](./images/104188-2819849585.png){: style="width:400px"}](./images/104188-2819849585.png)
+[![](./images/107011-4194903623.png){: style="width:400px"}](./images/107011-4194903623.png)
+[![](./images/107115-3621427120.png){: style="width:400px"}](./images/107115-3621427120.png)
+[![](./images/107574-2339296326.png){: style="width:400px"}](./images/107574-2339296326.png)
 
 *Img2Img Movie Poster + Inpainting Upscale*
 
-![](./images/posterimg2img.gif){: style="width:800px"}
+[![](./images/posterimg2img.gif){: style="width:800px"}](./images/posterimg2img.gif)
 
 ## Text to Video Models
 
@@ -40,4 +40,4 @@ AnimateDiff Stable Diffusion Plug In to create Text to Video
 
 AnimateDiff is a seperate motion video model that integrates the unet block information of the loaded model to generate the individual frames that then get joined together into an animation.
 
-![](./images/00312-1092277290-RIFE.gif) ![](./images/ContactSheet-002.png){: style="width:768px"} 
+[![](./images/00312-1092277290-RIFE.gif)](./images/00312-1092277290-RIFE.gif) [![](./images/ContactSheet-002.png){: style="width:768px"}](./images/ContactSheet-002.png)
