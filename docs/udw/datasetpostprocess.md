@@ -3,15 +3,15 @@ icon:material/account-box-edit-outline
 
 There are 3 additional processes I do to my dataset that combat either certain flaws in the dataset, cleaning up data that could have production mistakes or bothersome editing choices, and maximize the amount of detail of specific shots or scenes: Layering, Cropping, and Stitching.
 
-!!! note
+!!! info
     
-    -SD1.x is trained on 512x512 resolution images, a size of 262,144 Pixels
+    * SD1.x is trained on 512x512 resolution images, a size of 262,144 Pixels
 
-    -Novel AI continues training from SD1.4 with 768x768 resolution images, a size of 589,824 Pixels
+    * Novel AI continues training from SD1.4 with 768x768 resolution images, a size of 589,824 Pixels
 
-    -SDXL is trained on 1024x1024 resolution images, a size of 1,048,576 Pixels
+    * SDXL is trained on 1024x1024 resolution images, a size of 1,048,576 Pixels
     
-    -Most enthusiast’s LoRAs are still trained on 512x512 due to their hardware constraints
+    * Most enthusiast’s LoRAs are still trained on 512x512 due to their hardware constraints
 
 ## Layering
 Say I have a shot of store front backdrop with a lot of moving foreground pieces, but not a single frame has a clean shot of that backdrop, but if I piece together enough separate frames together on top of each other and mask out the unwanted bits, I can create a clean frame edit of the backdrop that then I can include in my dataset. Then I can reintroduce some separate frames with the foreground pieces to train concept of being able to draw an empty room or location, and that same spot with people or other moving subjects. This is not something I prioritize often, but when a particular scene with too many movie pieces shows up that I feel is worth doing the work to get

@@ -1,23 +1,25 @@
 icon:material/pipe
-# Pipeline Workflow: Modifying a preset repo to handle an unexpected developments
+# Pipeline Workflow
+
+## Modifying a preset repo to handle an unexpected developments
 
 By the time I trained out several versions of UDW, I got familiar enough with the process where I was able to make changes as needed whenever something would arise in the process. Whether changing up the dataset creation process, or how I was automating the process as I got experienced enough to figure out where I can fit in pieces to reduce my workload. I learned a lot of python along the way and more about the inner workings of model training. As stated before, I got a jump start using [Anime Screenshot Pipeline](https://github.com/cyber-meow/anime_screenshot_pipeline) but ultimately my end result in changing the pipeline workflow looks unrecognizable to even the developer's current version of the process.
 
-!!! note
+!!! info
     
-    -Anime is often shown in 24 frames per second, drawn in 3s. Meaning every drawing is on screen for 3 frames, 8 different frames shown in a second.
+    * Anime is often shown in 24 frames per second, drawn in 3s. Meaning every drawing is on screen for 3 frames, 8 different frames shown in a second.
 
-    -A standard anime episode is 24 minutes long, or around 34k frames
+    * A standard anime episode is 24 minutes long, or around 34k frames
     
-    -A standard film of 2 hours is around 170k frames
+    * A standard film of 2 hours is around 170k frames
     
-    -Each frame when exported through ffmpeg is around 1.5MB-3MBs in size
+    * Each frame when exported through ffmpeg is around 1.5MB-3MBs in size
     
-    -This makes the size of frame extractions 300GBs for a single episode and 1.5TB for a movie. 
+    * This makes the size of frame extractions 300GBs for a single episode and 1.5TB for a movie. 
     
-    -A manually cleaned up episode will come down to about 50GBs in size and a movie will drop to around 600GB, but takes about a days worth of work.
+    * A manually cleaned up episode will come down to about 50GBs in size and a movie will drop to around 600GB, but takes about a days worth of work.
     
-    -Very large Hard Drive space required
+    * Very large Hard Drive space required
 
 ## Frame Extraction 
 
@@ -38,7 +40,7 @@ python tagtools.py -r dedup "\path\to\folder"
 ```
 
 [![](./images/Pipeline/scene folders.PNG)](./images/Pipeline/scene folders.PNG)
-<span style="font-size: 80%;">*340 folders, but this episode (Unlimited Blade Works, Ep 3) had 384 total jump cuts, the rest are not usable or in different sorting folders*</span>
+<span style="font-size: 80%;">*340 folders, but this episode (Unlimited Blade Works, Ep 3) had 384 total jump cuts, the rest are not usable or in different sorting folders for stitching and cropping.*</span>
 
 The downside to this new method is that increased use of hard drive space from not just more images, but the file size was doubled or tripled in some cases. Mpdecimate's outputs were shrinking the .png file size to under 1MB, and ffmpeg on it's own does not have settings to reduce file sizes without destroying the pixelation of the output. 
 
@@ -69,39 +71,50 @@ The 16:9 ratio confused the classifiers and generate an absurd amount of false p
 
 ### Face Detector for fixing character tags
 
+The solution I came up with was repurposing the [anime face detection tool](https://github.com/hysts/anime-face-detector) used in the original pipeline github to detect passable images and generate 1:1 crops for a dataset. Per the github, "The model detects near-frontal anime faces and predicts 28 landmark points." Meaning that it will use these data points to detect faces on all images in a directory and give each image a scoring threshold, of which it will give it a passing detection or no. I modified the script to have it produce duplicates of all images that pass the face detection threshold into a different folder instead of creating cropped images. These images will be imported after the inital dataset import to my image organizer, Hydrus, is completed. I will delete all the subject tags from those initial images and then import the copied images with the accurate subject tags and it will update the ones already on file. 
+
 [![](./images/Pipeline/cluster_mean.jpg){: style="width:400px"}](./images/Pipeline/cluster_mean.jpg)
 [![](./images/Pipeline/cluster_pts.png){: style="width:400px"}](./images/Pipeline/cluster_pts.png)
 
 <span style="font-size: 80%;">*Images from Hysts' anime face detection tool github*</span>
 
-The solution I came up with was repurposing the [anime face detection tool](https://github.com/hysts/anime-face-detector) used in the original pipeline github to detect passable images and generate 1:1 crops for a dataset. Per the github, "The model detects near-frontal anime faces and predicts 28 landmark points." Meaning that it will use these data points to detect faces on all images in a directory and give each image a scoring threshold, of which it will give it a passing detection or no. I modified the script to have it produce duplicates of all images that pass the face detection threshold into a different folder instead of creating cropped images. These images will be imported after the inital dataset import to my image organizer, Hydrus, is completed. I will delete all the subject tags from those initial images and then import the copied images with the accurate subject tags and it will update the ones already on file. 
-
 My first training after using this method instantly fixed the prompting of subjects. A quick skim of the images that passed the face detection threshold show no signs of false positives, and there is no issue if there are cases of false negatives, as manual review will take care of anything that were missed. Other miscellaneous improves I used for this phase include an autotagger aggregate that will tag based on the average of 3 or more classifiers running concurrently and has the tagging of copyright names removed just so that I reduce false positive tags of characters that don’t belong in the content from being erroneously introduced. 
 
 ## Dataset Organization and Preparation
+
+### Hydrus
+
 While dedicated image organizers for stable diffusion datasets are available, I elected with using an obscure desktop application called [Hydrus Network](https://hydrusnetwork.github.io/hydrus/index.html). Created in the early 2010s for the purpose of organizing large media collections (of internet memes and other s#!tposts) under a single location with various customizable categories coincidentally modeled after the format of imageboards such as Danbooru. The media is tabulated based on file hash rather than whatever the file is named as. This aspect synergizes not only with how the datasets need to be tagged if following the Booru/NovelAI format, but with how my organization scripts operates on file hash values when sorting unique frames out, as well as how I incorporate face detection copies of images with correct subject tagging.
 
+[![](./images/Pipeline/Hydrus.png){: style="width:400px"}](./images/Pipeline/Hydrus.png)
+[![](./images/Pipeline/Hydrus2.png){: style="width:318px"}](./images/Pipeline/Hydrus2.png)
+
+<span style="font-size: 80%;">*Main View on left, Tagging Window open on right*</span>
+
 Once my sorted and auto tagged images are completed, I will import the dataset batch into Hydrus and it will associate the tag sidecar txt files generated by the taggers to the images and will automatically populate the datapoints hits. I also include Hydrus specific metadata of the series, episode, and scene for later manual review once the import is finished.
+
 Once the first import is complete, I will select the entire batch and edit their tag information to remove all the subject tags (1boy/1girl and other variations of multiple of each for example) in a single click, and then import the copied images from the face detection step. Since the copies have the same hash value, the only thing that will change is that the sidecar txt values will update to include any new values and will not replace any changes I may have already made. Once the subject values have been reintroduced, I will then delete those copies, but will keep the originals of the first import as they will still be required in the future.
+
 From here I can proactively check any tags I may have previously had issues with and search for all images by that tag, remove tags if incorrect, maybe even delete images that could be seen as bad data, and overall just skim that the frames I did get were satisfactory.
 I will repeat this process with all new dataset batches I make until the model is ready to train. From here I can use the Hydrus metadata I included to only select a specific range of data that is ready to go and it will export a new set of copies with sidecar txt files that the trainer will need to associate the tags and images.
 
 ## Kohya Trainer
-!!! Note
 
-    -Card used for training with Kohya SD-Script is a water cooled RTX4090 MSI Suprim Liquid X on my personal machine.
+!!! info
+
+    * Card used for training with Kohya SD-Script is a water cooled RTX4090 MSI Suprim Liquid X on my personal machine.
     
-    -Training 200k Images at 512x512 resolution at batch size 16 takes 48 hours. 
+    * Training 200k Images at 512x512 resolution at batch size 16 takes 48 hours. 
     
-    -Projected Training of 400k images at 768x768 resolution at batch size 1 is 120 hours based on a fellow trainer who trained a similar configuration with a 16GB Google TensorGPU on the cloud, with approximately 168 hours if trained at 1024x1024 over SD1/NAI. 
+    * Projected Training of 400k images at 768x768 resolution at batch size 1 is 120 hours based on a fellow trainer who trained a similar configuration with a 16GB Google TensorGPU on the cloud, with approximately 168 hours if trained at 1024x1024 over SD1/NAI. 
     
-    -From a test I already tried a 768 resolution, batch size at 16 down to 14 caused a CUDA Out of memory error within minutes of training start and then requires a PC restart. Have not tried again with the current pending training data size as I decided to focus on prepping the dataset
+    * From a test I already tried a 768 resolution, batch size at 16 down to 14 caused a CUDA Out of memory error within minutes of training start and then requires a PC restart. Have not tried again with the current pending training data size as I decided to focus on prepping the dataset
    
-    -SDXL training requires even more memory to accurately finetune the model, outside the scope of my hardware.
+    * SDXL training requires even more memory to accurately finetune the model, outside the scope of my hardware.
     
-    -While training the model, I cannot perform any other GPU based tasks on my machine or risk causing an Out of Memory error. It also gets very hot.
+    * While training the model, I cannot perform any other GPU based tasks on my machine or risk causing an Out of Memory error. It also gets very hot.
     
-    -Due to the above, I focused more on gathering the dataset and do as much quality work as I could before committing to a very lengthy training session.
+    * Due to the above, I focused more on gathering the dataset and do as much quality work as I could before committing to a very lengthy training session.
 
 Japanese developer Kohya-SS’s SD Script package is an old but very consistent way training package. While it mostly supports LoRA and other network-based checkpoint trainings, it still supports full finetune support for SD1 models. It only needs to be pointed to a training directory, will check the main training folder and the regulation folder if enabled, and will then just follow the training parameters set in the powershell script and output the checkpoint when done. It borrows from the NAI training settings and incorporates the aspect ratio bucketing so the resolution sizes are not restricted to 1:1 aspect image
 

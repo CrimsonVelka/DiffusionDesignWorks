@@ -23,24 +23,25 @@ This model’s current version was trained on 09/2023, with around 200k images o
 
 ### ufotable sources
 
-```
-Fate Zero 
-The Garden of Sinners 8 – Epilogue
-The Garden of Sinners 9 - Future Gospel
-The Garden of Sinners 9.5 - Future Gospel: Extra Chorus
-Fate Stay Night [Réalta Nua]
-Fate Stay Night Unlimited Blade Works
-Fate/Hollow Ataraxia
-Fate Stay Night Heaven’s Feel Trilogy
-```
+!!! abstract
+    * Fate Zero 
+    * The Garden of Sinners 8 – Epilogue
+    * The Garden of Sinners 9 - Future Gospel
+    * The Garden of Sinners 9.5 - Future Gospel: Extra Chorus
+    * Fate Stay Night [Réalta Nua]
+    * Fate Stay Night Unlimited Blade Works
+    * Fate/Hollow Ataraxia
+    * Fate Stay Night Heaven’s Feel Trilogy
 
 ### Non-themed sources 
 
 In addition to ufotable, I added for experimentation purposes the dataset from the following non ufotable works for additional data and regularization purposes:
-```
-Lord El-Melloi II Case Files (TV – Studio Troyca)
-*and additional miscellaneous non-animation frame data not from danbooru*
-```
+
+!!! abstract
+    * Lord El-Melloi II Case Files (TV – Studio Troyca)
+    * *and additional miscellaneous non-animation frame data not from danbooru*
+
+
 Dataset was created by running Blu-ray rips of the listed content through ffmpeg as part of the aid of [Anime Screenshot Pipeline](https://github.com/cyber-meow/anime_screenshot_pipeline) on Github back in February of 2023.
 
 
