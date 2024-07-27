@@ -3,7 +3,7 @@ icon:material/account-box-edit-outline
 
 There are 3 additional processes I do to my dataset that combat either certain flaws in the dataset, cleaning up data that could have production mistakes or bothersome editing choices, and maximize the amount of detail of specific shots or scenes: Layering, Cropping, and Stitching.
 
-??? note
+!!! note
     
     -SD1.x is trained on 512x512 resolution images, a size of 262,144 Pixels
 

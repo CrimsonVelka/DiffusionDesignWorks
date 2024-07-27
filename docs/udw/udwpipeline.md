@@ -3,7 +3,7 @@ icon:material/pipe
 
 By the time I trained out several versions of UDW, I got familiar enough with the process where I was able to make changes as needed whenever something would arise in the process. Whether changing up the dataset creation process, or how I was automating the process as I got experienced enough to figure out where I can fit in pieces to reduce my workload. I learned a lot of python along the way and more about the inner workings of model training. As stated before, I got a jump start using [Anime Screenshot Pipeline](https://github.com/cyber-meow/anime_screenshot_pipeline) but ultimately my end result in changing the pipeline workflow looks unrecognizable to even the developer's current version of the process.
 
-??? note
+!!! note
     
     -A standard anime episode of 24 minutes is around 34k frames
     
@@ -16,12 +16,19 @@ By the time I trained out several versions of UDW, I got familiar enough with th
     -Cutting the opening and ending animation off each episode as well as the next episode preview knocks off 195 seconds or 4680 frames, which would be between 7-14GB. Cutting the movie credits removes around 6 minutes or 8,640 frames, or 14-28GB.
     
     -A manually cleaned up episode will come down to about 50GBs in size and a movie will drop to around 600GB 
+    
     -Lots of Hard Drive space required
 
 ## Frame Extraction 
+
 The first change I made to the pipeline was the ffmpeg script provided. The Pipeline used a script that would run the mpdecimate command to remove duplicate or “frozen frames”, moments in the animation where there is no movement, as ffmpeg is “extracting” the frames to condense down the frames to a final output around a 10th of the original size. 
+
 However, I came to find out much later there was a large spread of false positive frame removals for unknown reasons and false negatives of frames that were kept from a combination of mpdecimate not considering jump cuts that repeat scenes after several cuts, and due to the Blu-ray encodings creating enough pixelation changes between frames that it would defeat mpdecimate’s deletion threshold. 
+
+
 Because the loss of data was too significant to ignore, I stopped using mpdecimate and let ffmpeg extract every single frame and began using a deduping script that would sort duplicates based on the image’s file hash value and would only move all the flagged frames to a different folder instead of deleting them, allowing for manual review in the future. The downside to this method is that I am now using significant amount of hard drive space which would eventually force me to start buying hard drives and to looking into NAS solutions to hold all this data. It did also present a way to schedule when to start manual reviewing the datasets, as this would free almost enough space to frame extract another episode.  
+
+![](./images/Pipeline/Frame Extraction.png)
 
 ## Tagging
 Stable Diffusion base models use CLIP captioning to tag their datasets with natural language for prompt keywords. NovelAI’s anime finetune of SD1.4 instead used the English based Japanese imageboard site Danbooru’s tagging format as parent company Anlatan scrapped Danbooru for all the images used in training their model and kept the metadata. Thus, all future anime models created by enthusiasts either finetuning that model or attempting to “finetune” SDXL base models to do better anime generations would follow this format when classifying their info. Thus, most Stable Diffusion dataset classifiers created follow the Danbooru tag format, even for realistic models.
@@ -39,14 +46,21 @@ From here I can proactively check any tags I may have previously had issues with
 I will repeat this process with all new dataset batches I make until the model is ready to train. From here I can use the Hydrus metadata I included to only select a specific range of data that is ready to go and it will export a new set of copies with sidecar txt files that the trainer will need to associate the tags and images.
 
 ## Kohya Trainer
-Things to note before continuing:
--Card used for training is a water cooled RTX4090 MSI Suprim Liquid X on my personal machine.
--Training 200k Images at 512x512 resolution at batch size 16 takes 48 hours. 
--Projected Training of 400k images at 768x768 resolution at batch size 1 is 120 hours based on a fellow trainer who trained a similar configuration with a 16GB Google TensorGPU on the cloud, with approximately 168 hours if trained at 1024x1024 over SD1/NAI. 
---From a test I already tried a 768 resolution, batch size at 16 caused a CUDA Out of memory error within minutes of training start and then requires a PC restart. Have not tried again with the current pending training data size. 
---SDXL training requires even more memory to accurately finetune the model, outside the scope of my hardware.
--While training the model, I cannot perform any other GPU based tasks on my machine or risk causing an Out of Memory error. It also gets very hot.
--Due to the above, I focused more on gathering the dataset and do as much quality work as I could before committing to a very lengthy training session.
+!!! Note
+
+    -Card used for training with Kohya SD-Script is a water cooled RTX4090 MSI Suprim Liquid X on my personal machine.
+    
+    -Training 200k Images at 512x512 resolution at batch size 16 takes 48 hours. 
+    
+    -Projected Training of 400k images at 768x768 resolution at batch size 1 is 120 hours based on a fellow trainer who trained a similar configuration with a 16GB Google TensorGPU on the cloud, with approximately 168 hours if trained at 1024x1024 over SD1/NAI. 
+    
+    -From a test I already tried a 768 resolution, batch size at 16 down to 14 caused a CUDA Out of memory error within minutes of training start and then requires a PC restart. Have not tried again with the current pending training data size as I decided to focus on prepping the dataset
+   
+    -SDXL training requires even more memory to accurately finetune the model, outside the scope of my hardware.
+    
+    -While training the model, I cannot perform any other GPU based tasks on my machine or risk causing an Out of Memory error. It also gets very hot.
+    
+    -Due to the above, I focused more on gathering the dataset and do as much quality work as I could before committing to a very lengthy training session.
 
 Japanese developer Kohya-SS’s SD Script package is an old but very consistent way training package. While it mostly supports LoRA and other network-based checkpoint trainings, it still supports full finetune support for SD1 models. It only needs to be pointed to a training directory, will check the main training folder and the regulation folder if enabled, and will then just follow the training parameters set in the powershell script and output the checkpoint when done. It borrows from the NAI training settings and incorporates the aspect ratio bucketing so the resolution sizes are not restricted to 1:1 aspect image
 

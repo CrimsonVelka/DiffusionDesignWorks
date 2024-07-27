@@ -13,55 +13,48 @@ One of the issues as to why this never picked up much steam, aside from its inco
 
 ### AnimateDiff + UDW Examples
 
-----
 
-![](00175-2176596798.gif){: style="height:377px"}
-![](00372-1258236320-Flip.gif){: style="height:377px"}
+![](00175-2176596798-RIFE.gif){: style="width:408px"}
+![](00372-1258236320-Flip-RIFE.gif){: style="width:408px"}
 
-![](00080-345913690.gif){: style="height:280px"}
-![](00106-2140579446.gif){: style="height:280px"}
-![](00404-1652022638.gif){: style="height:280px"}
-![](00427-2950972036.gif){: style="height:280px"}
+![](00080-345913690-RIFE.gif){: style="width:202px"}
+![](00106-2140579446-RIFE.gif){: style="width:202px"}
+![](00404-1652022638-RIFE.gif){: style="width:202px"}
+![](00427-2950972036-RIFE.gif){: style="width:202px"}
 
-----
+*[Reaniamted with Flowframes](https://github.com/n00mkrad/flowframes) - RIFE 4.0 @ 20 FPS*
 
-While fortunate enough to have a 4090 and able to generate 768x512 clips, they still took a significant amount of time to train and were still prone to failing mid generation if there was some sort of hiccup for the bleeding edge tech at the time. 
-One other drawback to AnimateDiff is that outputs are generated in gif format by default, but you have access to all your generated frames, so you could rejoin in a better file container like mp4 or webm and have a higher quality clip at a better frame rate. 
+While fortunate enough to have a 4090 and able to generate 768x512 clips, they still took a significant amount of time to train and were still prone to failing mid generation if there was some sort of hiccup for the bleeding edge tech at the time. There is some optimizations since then, more GPU VRAM is require to do higher resolutions, hires upscales, and longer generations.
 
-----
+!!! Notes
 
-<iframe src="https://files.catbox.moe/olqe31.webm" width= "382" height= "382" frameborder="0"></iframe>
-<iframe src="https://files.catbox.moe/29uwm2.webm" width= "382" height= "382" frameborder="0"></iframe>
-<iframe src="https://files.catbox.moe/0usjoj.webm" width= "188" height= "280" frameborder="0"></iframe>
-<iframe src="https://files.catbox.moe/272mi9.webm" width= "188" height= "280" frameborder="0"></iframe> 
-<iframe src="https://files.catbox.moe/9f42ef.webm" width= "188" height= "280" frameborder="0"></iframe> 
-<iframe src="https://files.catbox.moe/pax51f.webm" width= "188" height= "280" frameborder="0"></iframe> 
-
-[Done with Flowframes](https://github.com/n00mkrad/flowframes) - RIFE 4.0 @ 20 FPS
+    One other drawback to AnimateDiff is that outputs are generated in a very low bit gif format and around 8FPS by default, but you have access to all your generated frames at their maximum generated quality, so you could reanimate them in third party software or output into a better file container like mp4 or webm at higher quality clip at a better frame rate. 
 
 ----
-## AnimateDiff vs Luma
+## Luma (and other AI Video platforms)
 
-Services like Luma do have a better quality to them even when generating off an image, but restricted to the base model and training that the platform is using. Also using the enhance prompt feature will deviate from your image almost entirely if your image is based on something the model is not trained on. If you focus exclusively on Text to Video, its not a bad platform, but if you want more control over the content you want to create with what you have, we would have to look else where.
+Services like Luma do have a better quality to their video generations, even when generating off an image for Img2Vid. While short in length, they are still longer than animatediff and maintain better quality by default as far as the platform is doing additional work in background. 
 
 
 ### Luma Img2Vid Examples
 
-<details closed>
-  <summary>Luma Videos </summary>
-  <iframe src="https://files.catbox.moe/csbue6.mp4" width= "360" height= "200" frameborder="0"></iframe>
-  <iframe src="https://files.catbox.moe/9zzjt4.mp4" width= "360" height= "200" frameborder="0"></iframe>
-  <iframe src="https://files.catbox.moe/uy046a.mp4" width= "360" height= "450" frameborder="0"></iframe>
-  <iframe src="https://files.catbox.moe/4on3o8.mp4" width= "360" height= "450" frameborder="0"></iframe>
-  <iframe src="https://files.catbox.moe/4kj2le.mp4" width= "720" height= "400" frameborder="0"></iframe>
-</details>
+*Starting Source Images*
+![](LumaOriginals.png)
 
-![](60673-2805156543.png){: align=right style="width: 380px" style="height: 500px"} 
-![](87742-1493555535.png){: align=left style="width: 380px"}
-![](88287-1384185279.png){: align=left style="width: 380px"}
+*Generated Results for Img2Vid*
+<iframe src="https://files.catbox.moe/csbue6.mp4" width= "410" height= "232" frameborder="0"></iframe>
+<iframe src="https://files.catbox.moe/9zzjt4.mp4" width= "410" height= "232" frameborder="0"></iframe>
+<iframe src="https://files.catbox.moe/4kj2le.mp4" width= "828" height= "460" frameborder="0"></iframe>
+<iframe src="https://files.catbox.moe/uy046a.mp4" width= "410" height= "550" frameborder="0"></iframe>
+<iframe src="https://files.catbox.moe/4on3o8.mp4" width= "410" height= "550" frameborder="0"></iframe>
 
-Originals UDW Images
+But being restricted to their base model and their training may produce unintended results. Using their enhance prompt feature will deviate from your image almost entirely if your image is based on something the model is not trained on. If you focus exclusively on Text to Video, its not a bad platform, but if you want more control over the content you want to create with what you have, we would have to look else where.
 
+??? Warning
+    ![](106696-3973067177.png){: style="width:783px"}
+        <iframe src="https://files.catbox.moe/rqfivc.mp4" width= "390" height= "215" frameborder="0"></iframe>
+    <iframe src="https://files.catbox.moe/cyiac9.mp4" width= "390" height= "215" frameborder="0"></iframe>
+    
 ----
 
 ## Homebrew Potential
@@ -76,7 +69,7 @@ Sometime this year, the developers of AnimateDiff disclosed their training metho
 
 Since specific tuning is not required, we are open to using more types of movies, recordings, and other animations not necessarily related to official films and shows or even the ones we are using. 
 
-Say we have access to a collection of videos. What we can create a script that will generate timestamps, similar to chapter select codes for Blu-Rays or steaming services, to mark every time there is a jumpcut to a new scene or camera shot. This will get written onto a sidecar file. 
+Say we have access to a collection of videos. What we can create a [script that will generate timestamps](https://www.youtube.com/watch?v=nOeaFEHuFyM), similar to chapter select codes for Blu-Rays or steaming services, to mark every time there is a jumpcut to a new scene or camera shot. This will get written onto a sidecar file. 
 Then with ffmpeg, use the video clip command with the sidecar automate the video clips slices. These clips will then be tagged and captioned and can be organized within Hydrus (Hydrus also can organize video format files) and use the same image organization tools to manually review tags and captions every time we need to train the model. 
 
 ??? note

@@ -13,35 +13,31 @@ What separates this model project from other checkpoints that similarly go about
 
 ----
 
-## T2I Models
+## Text to Image Models
 
 ### Unlimited Diffusion Works
 
-Studio Ufotable theme Stable Diffusion 1 Based Model
+Studio Ufotable themed Stable Diffusion 1.x based model
 
-*Standard Text 2 Image Generation*
+*Standard Text to Image Generation*
 
-![](./images/104188-2819849585.png){: style="width:49.5%"}
-![](./images/107011-4194903623.png){: style="width:49.5%"}
-![](./images/107115-3621427120.png){: style="width:49.5%"}
-![](./images/107574-2339296326.png){: style="width:49.5%"}
+![](./images/104188-2819849585.png){: style="width:400px"}
+![](./images/107011-4194903623.png){: style="width:400px"}
+![](./images/107115-3621427120.png){: style="width:400px"}
+![](./images/107574-2339296326.png){: style="width:400px"}
 
 *Img2Img Movie Poster + Inpainting Upscale*
 
-![](./images/BrotherhoodWolf.png){: style="width:32.5%"}
-![](./images/00341-100224763.png){: style="width:32.5%"}
-![](./images/00474-3492909164.png){: style="width:32.5%"}
+![](./images/posterimg2img.gif){: style="width:800px"}
 
-## T2V Models
+## Text to Video Models
 
 ### Motion Model Diffusion 
 
 AnimateDiff Stable Diffusion Plug In to create Text to Video
 
-![](./images/00109-3896167239.png){: style="width:49.5%"} <iframe src="https://files.catbox.moe/8ts0hn.webm" width= "384" height= "256" frameborder="0"></iframe>
+![](./images/00109-3896167239.png){: style="width:384px"} <iframe src="https://files.catbox.moe/8ts0hn.webm" width= "384" height= "256" frameborder="0"></iframe>
 
+AnimateDiff is a seperate motion video model that integrates the unet block information of the loaded model to generate the individual frames that then get joined together into an animation.
 
-
-![](./images/ContactSheet-002.png){: style="width:47.4%"} <iframe src="https://files.catbox.moe/0bef63.webm" width= "400" height= "270" frameborder="0"></iframe>
-
-AnimateDiff uses the loadded model to generate individual frames that then get joined together into an animation
+![](./images/00312-1092277290-RIFE.gif) ![](./images/ContactSheet-002.png){: style="width:768px"} 
