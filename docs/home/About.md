@@ -21,14 +21,14 @@ Studio Ufotable themed Stable Diffusion 1.x based model
 
 *Standard Text to Image Generation*
 
-[![](./images/104188-2819849585.png){: style="width:400px"}](./images/104188-2819849585.png)
-[![](./images/107011-4194903623.png){: style="width:400px"}](./images/107011-4194903623.png)
-[![](./images/107115-3621427120.png){: style="width:400px"}](./images/107115-3621427120.png)
-[![](./images/107574-2339296326.png){: style="width:400px"}](./images/107574-2339296326.png)
+[![](./images/104188-2819849585.png){: style="width:340px"}](./images/104188-2819849585.png)
+[![](./images/107011-4194903623.png){: style="width:340px"}](./images/107011-4194903623.png)
+[![](./images/107115-3621427120.png){: style="width:340px"}](./images/107115-3621427120.png)
+[![](./images/107574-2339296326.png){: style="width:340px"}](./images/107574-2339296326.png)
 
 *Img2Img Movie Poster + Inpainting Upscale*
 
-[![](./images/posterimg2img.gif){: style="width:800px"}](./images/posterimg2img.gif)
+[![](./images/posterimg2img.gif){: style="width:700px"}](./images/posterimg2img.gif)
 
 ## Text to Video Models
 
@@ -36,8 +36,9 @@ Studio Ufotable themed Stable Diffusion 1.x based model
 
 AnimateDiff Stable Diffusion Plug In to create Text to Video
 
-![](./images/00109-3896167239.png){: style="width:384px"} <iframe src="https://files.catbox.moe/8ts0hn.webm" width= "384" height= "256" frameborder="0"></iframe>
+![](./images/00109-3896167239.png){: style="width:336px"} <iframe src="https://files.catbox.moe/8ts0hn.webm" width= "336" height= "224" frameborder="0"></iframe>
 
 AnimateDiff is a seperate motion video model that integrates the unet block information of the loaded model to generate the individual frames that then get joined together into an animation.
 
-[![](./images/00312-1092277290-RIFE.gif)](./images/00312-1092277290-RIFE.gif) [![](./images/ContactSheet-002.png){: style="width:768px"}](./images/ContactSheet-002.png)
+[![](./images/00312-1092277290-RIFE.gif){: style="width:680px"}](./images/00312-1092277290-RIFE.gif) 
+[![](./images/ContactSheet-002.png){: style="width:680px"}](./images/ContactSheet-002.png)

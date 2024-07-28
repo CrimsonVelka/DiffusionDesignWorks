@@ -28,12 +28,12 @@ theme:
   plugins:
     - typeset
     - search
+    - tags
     - glightbox
     - blog:
-      enabled: false
-      blog_toc: true
+        post_dir: "{blog}/posts"
     - mkdocs-video
-
+ 
   markdown_extensions:
     - admonition
     - pymxdownx.details
@@ -77,8 +77,6 @@ nav:
   - Home: index.md
   - About:
       - 'Introduction': home/About.md
-  #- News:
-      #- blog/posts/index.md
   - Unlimited Diffusion Works:
       - 'Overview': udw/udwmodel.md
       - 'Status Updates': udw/todolist.md
@@ -89,6 +87,8 @@ nav:
       - 'AnimateDiff + UDW': motion/motiondiffusion.md
   #- Closing:
       - 'Lessons Learned': faq/lessonslearned.md
+  #- Blog:
+      #- blog/index.md    
 
 markdown_extensions:
   - pymdownx.highlight:

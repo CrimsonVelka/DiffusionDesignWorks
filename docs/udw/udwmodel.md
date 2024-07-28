@@ -12,11 +12,10 @@ With this much material overarching several different franchises handed by diffe
 
 ## Dataset
 
-[![](./images/overview/dataset/fatezerokv1.jpg){: style="height:250px;width:161px"}](./images/overview/dataset/fatezerokv1.jpg)
-[![](./images/overview/dataset/ubwkv1.jpg){: style="height:250px;width:161px"}](./images/overview/dataset/ubwkv1.jpg)
-[![](./images/overview/dataset/hf3kv1.jpg){: style="height:250px;width:161px"}](./images/overview/dataset/hf3kv1.jpg)
-[![](./images/overview/dataset/knkekv1.jpg){: style="height:250px;width:161px"}](./images/overview/dataset/knkekv1.jpg)
-[![](./images/overview/dataset/emcfkv.jpg){: style="height:250px;width:161px"}](./images/overview/dataset/emcfkv.jpg)
+[![](./images/overview/dataset/thumb/knkekv1-thumb.png){: style="width:170px"}](./images/overview/dataset/full/knkekv1.jpg)
+[![](./images/overview/dataset/thumb/fatezerokv1-thumb.png){: style="width:170px"}](./images/overview/dataset/full/fatezerokv1.jpg)
+[![](./images/overview/dataset/thumb/ubwkv1-thumb.png){: style="width:170px"}](./images/overview/dataset/full/ubwkv1.jpg)
+[![](./images/overview/dataset/thumb/hf1kv1-thumb.png){: style="width:170px"}](./images/overview/dataset/full/hf1kv1.jpg)
 
 
 This model’s current version was trained on 09/2023, with around 200k images over NovelAI v1, uses the following content from studio ufotable:
@@ -24,6 +23,8 @@ This model’s current version was trained on 09/2023, with around 200k images o
 ### ufotable sources
 
 !!! abstract
+    *In Production Order*
+
     * Fate Zero 
     * The Garden of Sinners
         * 8 - Epilogue
@@ -43,7 +44,7 @@ In addition to ufotable, I added for experimentation purposes the dataset from t
 
 !!! abstract
     * Lord El-Melloi II Case Files (TV – Studio Troyca)
-    * *and additional miscellaneous non-animation data*
+    * *additional miscellaneous non-animation data*
 
 
 Dataset was created by running Blu-ray rips of the listed content through ffmpeg as part of the aid of [Anime Screenshot Pipeline](https://github.com/cyber-meow/anime_screenshot_pipeline) on Github back in February of 2023.
@@ -53,37 +54,37 @@ Dataset was created by running Blu-ray rips of the listed content through ffmpeg
 
 ### Main Theme Assorted Samples
 
-[![](./images/overview/keyvisual/full/71966-357371757.png){: style="width:400px"}](./images/overview/keyvisual/full/71966-357371757.png)
-[![](./images/overview/keyvisual/full/73082-256545115.png){: style="width:400px"}](./images/overview/keyvisual/full/73082-256545115.png)
-[![](./images/overview/keyvisual/full/72307-3288374492.png){: style="width:400px"}](./images/overview/keyvisual/full/72307-3288374492.png)
-[![](./images/overview/keyvisual/full/72333-3049597417.png){: style="width:400px"}](./images/overview/keyvisual/full/72333-3049597417.png)
-[![](./images/overview/blurayres/73815-2911211619.png){: style="width:400px"}](./images/overview/blurayres/73815-2911211619.png)
-[![](./images/overview/blurayres/74919-646950122.png){: style="width:400px"}](./images/overview/blurayres/74919-646950122.png)
-[![](./images/overview/conceptart/71234-3241660550.png){: style="width:400px"}](./images/overview/conceptart/71234-3241660550.png)
-[![](./images/overview/conceptart/107655-3787594491.png){: style="width:400px"}](./images/overview/conceptart/107655-3787594491.png)
+[![](./images/overview/keyvisual/full/71966-357371757.png){: style="width:340px"}](./images/overview/keyvisual/full/71966-357371757.png)
+[![](./images/overview/keyvisual/full/73082-256545115.png){: style="width:340px"}](./images/overview/keyvisual/full/73082-256545115.png)
+[![](./images/overview/keyvisual/full/72307-3288374492.png){: style="width:340px"}](./images/overview/keyvisual/full/72307-3288374492.png)
+[![](./images/overview/keyvisual/full/72333-3049597417.png){: style="width:340px"}](./images/overview/keyvisual/full/72333-3049597417.png)
+[![](./images/overview/blurayres/73815-2911211619.png){: style="width:340px"}](./images/overview/blurayres/73815-2911211619.png)
+[![](./images/overview/blurayres/74919-646950122.png){: style="width:340px"}](./images/overview/blurayres/74919-646950122.png)
+[![](./images/overview/conceptart/71234-3241660550.png){: style="width:340px"}](./images/overview/conceptart/71234-3241660550.png)
+[![](./images/overview/conceptart/107655-3787594491.png){: style="width:340px"}](./images/overview/conceptart/107655-3787594491.png)
 
 ### 16:9 Screen Resolution TV/Movie Look Examples
 
-[![](./images/overview/blurayres/68981-3336393614.png){: style="width:400px"}](./images/overview/blurayres/68981-3336393614.png)
-[![](./images/overview/blurayres/68792-2210440585.png){: style="width:400px"}](./images/overview/blurayres/68792-2210440585.png)
-[![](./images/overview/blurayres/87508-1453217043.png){: style="width:400px"}](./images/overview/blurayres/87508-1453217043.png)
-[![](./images/overview/blurayres/87590-2557507210.png){: style="width:400px"}](./images/overview/blurayres/87590-2557507210.png)
-[![](./images/overview/blurayres/88147-1535975933.png){: style="width:400px"}](./images/overview/blurayres/88147-1535975933.png)
-[![](./images/overview/blurayres/98315-3984287718.png){: style="width:400px"}](./images/overview/blurayres/98315-3984287718.png)
+[![](./images/overview/blurayres/68981-3336393614.png){: style="width:340px"}](./images/overview/blurayres/68981-3336393614.png)
+[![](./images/overview/blurayres/68792-2210440585.png){: style="width:340px"}](./images/overview/blurayres/68792-2210440585.png)
+[![](./images/overview/blurayres/87508-1453217043.png){: style="width:340px"}](./images/overview/blurayres/87508-1453217043.png)
+[![](./images/overview/blurayres/87590-2557507210.png){: style="width:340px"}](./images/overview/blurayres/87590-2557507210.png)
+[![](./images/overview/blurayres/88147-1535975933.png){: style="width:340px"}](./images/overview/blurayres/88147-1535975933.png)
+[![](./images/overview/blurayres/98315-3984287718.png){: style="width:340px"}](./images/overview/blurayres/98315-3984287718.png)
 
 ### Key Visual Resolution Style Examples
 
-[![](./images/overview/keyvisual/thumb/Layer-9-Crop.png)](./images/overview/keyvisual/full/61824-1959696816.png)
-[![](./images/overview/keyvisual/thumb/Layer-10-Crop.png)](./images/overview/keyvisual/full/55835-2128820733.png)
-[![](./images/overview/keyvisual/thumb/Layer-11-Crop.png)](./images/overview/keyvisual/full/60607-3231689894.png)
-[![](./images/overview/keyvisual/thumb/Layer-13-Crop.png)](./images/overview/keyvisual/full/01470-2327565163.png)
+[![](./images/overview/keyvisual/thumb/Layer-9-Crop.png){: style="width:340px"}](./images/overview/keyvisual/full/61824-1959696816.png)
+[![](./images/overview/keyvisual/thumb/Layer-10-Crop.png){: style="width:340px"}](./images/overview/keyvisual/full/55835-2128820733.png)
+[![](./images/overview/keyvisual/thumb/Layer-11-Crop.png){: style="width:340px"}](./images/overview/keyvisual/full/60607-3231689894.png)
+[![](./images/overview/keyvisual/thumb/Layer-13-Crop.png){: style="width:340px"}](./images/overview/keyvisual/full/01470-2327565163.png)
 
 ### Concept Art Style Mock Up Examples
 
-[![](./images/overview/conceptart/63265-885359435.png){: style="width:400px"}](./images/overview/conceptart/63265-885359435.png)
-[![](./images/overview/conceptart/63291-3832714336.png){: style="width:400px"}](./images/overview/conceptart/63291-3832714336.png)
-[![](./images/overview/conceptart/63322-1230264608.png){: style="width:400px"}](./images/overview/conceptart/63322-1230264608.png)
-[![](./images/overview/conceptart/63324-2435138676.png){: style="width:400px"}](./images/overview/conceptart/63324-2435138676.png)
+[![](./images/overview/conceptart/63265-885359435.png){: style="width:340px"}](./images/overview/conceptart/63265-885359435.png)
+[![](./images/overview/conceptart/63291-3832714336.png){: style="width:340px"}](./images/overview/conceptart/63291-3832714336.png)
+[![](./images/overview/conceptart/63322-1230264608.png){: style="width:340px"}](./images/overview/conceptart/63322-1230264608.png)
+[![](./images/overview/conceptart/63324-2435138676.png){: style="width:340px"}](./images/overview/conceptart/63324-2435138676.png)
 
 
 ## Status Updates

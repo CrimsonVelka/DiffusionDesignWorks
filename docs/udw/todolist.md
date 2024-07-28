@@ -28,10 +28,10 @@ Ongoing progress of dataset's quality control and clean up:
 
 ### Ready To Train
 
-[![](./images/todolist/thumb/Layer-3-Crop.png){: style="width:188px"}](./images/todolist//full/knk6.jpg)
-[![](./images/todolist/thumb/Layer-2-Crop.png){: style="width:188px"}](./images/todolist/full/tozx.jpg)
-[![](./images/todolist/thumb/Layer-1-Crop.png){: style="width:188px"}](./images/todolist/full/ktrfull.jpg)
-[![](./images/todolist/thumb/Layer-4-Crop.png){: style="width:188px"}](./images/todolist/full/tob.png)
+[![](./images/todolist/thumb/Layer-3-Crop.png){: style="width:170px"}](./images/todolist//full/knk6.jpg)
+[![](./images/todolist/thumb/Layer-2-Crop.png){: style="width:170px"}](./images/todolist/full/tozx.jpg)
+[![](./images/todolist/thumb/Layer-1-Crop.png){: style="width:170px"}](./images/todolist/full/ktrfull.jpg)
+[![](./images/todolist/thumb/Layer-4-Crop.png){: style="width:170px"}](./images/todolist/full/tob.png)
 
 Ready to train on next session - minimal manual edits only:
 !!! example
@@ -55,10 +55,10 @@ Ready to train on next session - minimal manual edits only:
 
 ### In Progress
 
-[![](./images/todolist/thumb/Layer-5-Crop.png){: style="width:188px"}](./images/todolist//full/tsukire.jpg)
-[![](./images/todolist/thumb/Layer-6-Crop.png){: style="width:188px"}](./images/todolist/full/mahoyofull.png)
-[![](./images/todolist/thumb/Layer-7-Crop.png){: style="width:188px"}](./images/todolist/full/tos.jpg)
-[![](./images/todolist/thumb/Layer-8-Crop.png){: style="width:188px"}](./images/todolist/full/kny.png)
+[![](./images/todolist/thumb/Layer-5-Crop.png){: style="width:170px"}](./images/todolist//full/tsukire.jpg)
+[![](./images/todolist/thumb/Layer-6-Crop.png){: style="width:170px"}](./images/todolist/full/mahoyofull.png)
+[![](./images/todolist/thumb/Layer-7-Crop.png){: style="width:170px"}](./images/todolist/full/tos.jpg)
+[![](./images/todolist/thumb/Layer-8-Crop.png){: style="width:170px"}](./images/todolist/full/kny.png)
 
 In the pipeline but not ready due to priority, not directly ufotable content, or limited hard drive space
 
