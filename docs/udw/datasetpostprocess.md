@@ -15,8 +15,8 @@ There are 3 additional processes I do to my dataset that combat either certain f
 
 ## Layering
 
-[![](./images/datasetpostprocess/KnK-Frame-Sheet.png){: style="width:800px"}](./images/datasetpostprocess/KnK-Frame-Sheet.png)
-<span style="font-size: 80%;">*Frame sheet from Garden of Sinners 7*</span>
+[![](./images/datasetpostprocess/KnK-Scene.gif){: style="width:800px"}](./images/datasetpostprocess/KnK-Scene.gif)
+<span style="font-size: 80%;">*Example scene from Garden of Sinners 7*</span>
 
 Say I have a shot of store front backdrop with a lot of moving foreground pieces, but not a single frame has a clean shot of that backdrop, but if I piece together enough separate frames together on top of each other and mask out the unwanted bits, I can create a clean frame edit of the backdrop that then I can include in my dataset. 
 
