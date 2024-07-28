@@ -14,7 +14,20 @@ There are 3 additional processes I do to my dataset that combat either certain f
     * Most enthusiast’s LoRAs are still trained on 512x512 due to their hardware constraints
 
 ## Layering
-Say I have a shot of store front backdrop with a lot of moving foreground pieces, but not a single frame has a clean shot of that backdrop, but if I piece together enough separate frames together on top of each other and mask out the unwanted bits, I can create a clean frame edit of the backdrop that then I can include in my dataset. Then I can reintroduce some separate frames with the foreground pieces to train concept of being able to draw an empty room or location, and that same spot with people or other moving subjects. This is not something I prioritize often, but when a particular scene with too many movie pieces shows up that I feel is worth doing the work to get
+
+[![](./images/datasetpostprocess/KnK-Frame-Sheet.png){: style="width:800px"}](./images/datasetpostprocess/KnK-Frame-Sheet.png)
+<span style="font-size: 80%;">*Frame sheet from Garden of Sinners 7*</span>
+
+Say I have a shot of store front backdrop with a lot of moving foreground pieces, but not a single frame has a clean shot of that backdrop, but if I piece together enough separate frames together on top of each other and mask out the unwanted bits, I can create a clean frame edit of the backdrop that then I can include in my dataset. 
+
+[![](./images/datasetpostprocess/KnK-Frame-Layer.gif){: style="width:800px"}](./images/datasetpostprocess/KnK-Frame-Layer.gif)
+<span style="font-size: 80%;">*Layering the scene*</span>
+
+Then I can reintroduce some separate frames with the foreground pieces to train concept of being able to draw an empty room or location, and that same spot with people or other moving subjects. This is not something I prioritize often, but when a particular scene with too many movie pieces shows up that I feel is worth doing the work to get
+
+[![](./images/datasetpostprocess/KnK-7-Layered-BG.png){: style="width:400px"}](./images/datasetpostprocess/KnK-7-Layered-BG.png)
+[![](./images/datasetpostprocess/KnK-7-Layered-BG-1boy1girl.png){: style="width:400px"}](./images/datasetpostprocess/KnK-7-Layered-BG-1boy1girl.png)
+
 
 ## Stitching
 
