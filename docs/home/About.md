@@ -36,7 +36,7 @@ Studio Ufotable themed Stable Diffusion 1.x based model
 
 AnimateDiff Stable Diffusion Plug In to create Text to Video
 
-![](./images/00109-3896167239.png){: style="width:336px"} <iframe src="https://files.catbox.moe/8ts0hn.webm" width= "336" height= "224" frameborder="0"></iframe>
+![](./images/00109-3896167239.png){: style="width:340px"} <iframe src="https://files.catbox.moe/8ts0hn.webm" width= "340" height= "226.5" frameborder="0" allow="fullscreen"></iframe>
 
 AnimateDiff is a seperate motion video model that integrates the unet block information of the loaded model to generate the individual frames that then get joined together into an animation.
 

@@ -60,15 +60,14 @@ I initially used the built in Automatic1111 tagger when starting out making Text
 The 16:9 ratio confused the classifiers and generate an absurd amount of false positive tagging of character subjects onto all sorts of images that were not character focused; a scenery shot, item focus shots, transitioning scenes, logos and texts, panning of the environment before a subject walks into the shot, a magical explosion on screen. This incorrect info would result in generations where the subject would not appear in the image, or would appear fused into parts of a scenery, special effects shots, or just shots of empty hallways and unprompted backdrop focused images. 
 
 ??? Warning "Examples of the mistagging problem from a 02/2023 finetune attempt:"
-        
+     <span style="font-size: 95%;">*Yea I don't think these were normal...*</span>
+
     [![](./images/Pipeline/busted/1.png){: style="width:329px"}](./images/Pipeline/busted/1.png)
     [![](./images/Pipeline/busted/2.png){: style="width:329px"}](./images/Pipeline/busted/2.png)
     [![](./images/Pipeline/busted/3.png){: style="width:329px"}](./images/Pipeline/busted/3.png)
     [![](./images/Pipeline/busted/4.png){: style="width:329px"}](./images/Pipeline/busted/4.png)
     [![](./images/Pipeline/busted/7.png){: style="width:329px"}](./images/Pipeline/busted/7.png)
     [![](./images/Pipeline/busted/6.png){: style="width:329px"}](./images/Pipeline/busted/6.png)
-
-    <span style="font-size: 95%;">*Yea I don't think these were normal...*</span>
 
 ### Face Detector for fixing character tags
 
