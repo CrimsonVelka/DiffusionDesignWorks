@@ -5,9 +5,9 @@ icon:material/pipe
 
 By the time I trained out several versions of UDW, I got familiar enough with the process where I was able to make changes as needed whenever something would arise in the process. Whether changing up the dataset creation process, or how I was automating the process as I got experienced enough to figure out where I can fit in pieces to reduce my workload. I learned a lot of python along the way and more about the inner workings of model training. As stated before, I got a jump start using [Anime Screenshot Pipeline](https://github.com/cyber-meow/anime_screenshot_pipeline) but ultimately my end result in changing the pipeline workflow looks unrecognizable to even the developer's current version of the process.
 
-!!! info
+!!! info "Things to note before continuing:"
     
-    * Anime is often shown in 24 frames per second, drawn in 3s. Meaning every drawing is on screen for 3 frames, 8 different frames shown in a second.
+    * Anime is usually broadcasted in 24 frames per second, drawn in 3s. Meaning every drawing is on screen for 3 frames, 8 different frames shown in a second.
 
     * A standard anime episode is 24 minutes long, or around 34k frames
     
@@ -25,7 +25,7 @@ By the time I trained out several versions of UDW, I got familiar enough with th
 
 The first change I made to the pipeline was the [`ffmpeg`](https://www.ffmpeg.org/) script provided. The Pipeline used a script that would run the mpdecimate command to remove duplicate or “frozen frames”, moments in the animation where there is no movement, as `ffmpeg` is “extracting” the frames to condense down the frames to a final output around a 10th of the original size. Then a secondary filter using a computer vision model through a Jupyter script using `FiftyOne` would do one last sweep of any frozen frames mpdecimate would've missed to reduce the file size even further.
 
-[![](./images/Pipeline/Frame Extraction Header.png)](./images/Pipeline/Frame Extraction Header.png)
+[![](./images/Pipeline/Frame Extraction Header.png){: style="width:680px"}](./images/Pipeline/Frame Extraction Header.png)
 
 However, I came to find out much later there was a large spread of false positive frame removals for unknown reasons, and false negatives of frames that were kept from a combination of mpdecimate not considering jump cuts that repeat scenes after several cuts, and FiftyOne failing the second filter due to the Blu-ray encodings introducing enough pixelation changes between frames that it would defeat both filter’s deletion threshold. 
 
@@ -39,7 +39,8 @@ Because the loss of data was too significant to ignore, I stopped using mpdecima
 python tagtools.py -r dedup "\path\to\folder"
 ```
 
-[![](./images/Pipeline/scene folders.PNG)](./images/Pipeline/scene folders.PNG)
+[![](./images/Pipeline/scene folders.PNG){: style="width:680px"}](./images/Pipeline/scene folders.PNG)
+
 <span style="font-size: 80%;">*340 folders, but this episode (Unlimited Blade Works, Ep 3) had 384 total jump cuts, the rest are not usable or in different sorting folders for stitching and cropping.*</span>
 
 The downside to this new method is that increased use of hard drive space from not just more images, but the file size was doubled or tripled in some cases. Mpdecimate's outputs were shrinking the .png file size to under 1MB, and ffmpeg on it's own does not have settings to reduce file sizes without destroying the pixelation of the output. 
@@ -55,9 +56,10 @@ Stable Diffusion base models use CLIP captioning to tag their datasets with natu
 
 I initially used the built in Automatic1111 tagger when starting out making Textual Inversions and LoRAs and worked fine for the standard images you would find on the internet. It will generate a sidecar text file that will be read by the trainer to associate the metadata with the image. The problem comes when working on 16:9 images, as all the classifiers out in the wild were trained mostly with either 1:1 aspect images due to SD1.x early on requiring 512x512 data, or whatever sizable collection of images trainer could collect in other resolution sizes for regularization. 
 
-??? Warning
-    From a very very early finetune attempt from back in February 2023
-    
+The 16:9 ratio confused the classifiers and generate an absurd amount of false positive tagging of character subjects onto all sorts of images that were not character focused; a scenery shot, item focus shots, transitioning scenes, logos and texts, panning of the environment before a subject walks into the shot, a magical explosion on screen. This incorrect info would result in generations where the subject would not appear in the image, or would appear fused into parts of a scenery, special effects shots, or just shots of empty hallways and unprompted backdrop focused images. 
+
+??? Warning "Examples of the mistagging problem from a 02/2023 finetune attempt:"
+        
     [![](./images/Pipeline/busted/1.png){: style="width:329px"}](./images/Pipeline/busted/1.png)
     [![](./images/Pipeline/busted/2.png){: style="width:329px"}](./images/Pipeline/busted/2.png)
     [![](./images/Pipeline/busted/3.png){: style="width:329px"}](./images/Pipeline/busted/3.png)
@@ -67,14 +69,12 @@ I initially used the built in Automatic1111 tagger when starting out making Text
 
     <span style="font-size: 95%;">*Yea I don't think these were normal...*</span>
 
-The 16:9 ratio confused the classifiers and generate an absurd amount of false positive tagging of character subjects onto all sorts of images that were not character focused; a scenery shot, item focus shots, transitioning scenes, logos and texts, panning of the environment before a subject walks into the shot, a magical explosion on screen. This incorrect info would result in generations where the subject would not appear in the image, or would appear fused into parts of a scenery, special effects shots, or just shots of empty hallways and unprompted backdrop focused images. 
-
 ### Face Detector for fixing character tags
 
 The solution I came up with was repurposing the [anime face detection tool](https://github.com/hysts/anime-face-detector) used in the original pipeline github to detect passable images and generate 1:1 crops for a dataset. Per the github, "The model detects near-frontal anime faces and predicts 28 landmark points." Meaning that it will use these data points to detect faces on all images in a directory and give each image a scoring threshold, of which it will give it a passing detection or no. I modified the script to have it produce duplicates of all images that pass the face detection threshold into a different folder instead of creating cropped images. These images will be imported after the inital dataset import to my image organizer, Hydrus, is completed. I will delete all the subject tags from those initial images and then import the copied images with the accurate subject tags and it will update the ones already on file. 
 
-[![](./images/Pipeline/cluster_mean.jpg){: style="width:400px"}](./images/Pipeline/cluster_mean.jpg)
-[![](./images/Pipeline/cluster_pts.png){: style="width:400px"}](./images/Pipeline/cluster_pts.png)
+[![](./images/Pipeline/cluster_mean.jpg){: style="width:340px"}](./images/Pipeline/cluster_mean.jpg)
+[![](./images/Pipeline/cluster_pts.png){: style="width:340px"}](./images/Pipeline/cluster_pts.png)
 
 <span style="font-size: 80%;">*Images from Hysts' anime face detection tool github*</span>
 
@@ -86,14 +86,16 @@ My first training after using this method instantly fixed the prompting of subje
 
 While dedicated image organizers for stable diffusion datasets are available, I elected with using an obscure desktop application called [Hydrus Network](https://hydrusnetwork.github.io/hydrus/index.html). Created in the early 2010s for the purpose of organizing large media collections (of internet memes and other s#!tposts) under a single location with various customizable categories coincidentally modeled after the format of imageboards such as Danbooru. The media is tabulated based on file hash rather than whatever the file is named as. This aspect synergizes not only with how the datasets need to be tagged if following the Booru/NovelAI format, but with how my organization scripts operates on file hash values when sorting unique frames out, as well as how I incorporate face detection copies of images with correct subject tagging.
 
-[![](./images/Pipeline/Hydrus3.png){: style="width:800px"}](./images/Pipeline/Hydrus3.png)
+[![](./images/Pipeline/Hydrus3.png){: style="width:680px"}](./images/Pipeline/Hydrus3.png)
+
 <span style="font-size: 80%;">*Main View of Hydrus*</span>
 
 Once my sorted and auto tagged images are completed, I will import the dataset batch into Hydrus and it will associate the tag sidecar txt files generated by the taggers to the images and will automatically populate the datapoints hits. I also include Hydrus specific metadata of the series, episode, and scene for later manual review once the import is finished.
 
 Once the first import is complete, I will select the entire batch and edit their tag information to remove all the subject tags (1boy/1girl and other variations of multiple of each for example) in a single click, and then import the copied images from the face detection step. Since the copies have the same hash value, the only thing that will change is that the sidecar txt values will update to include any new values and will not replace any changes I may have already made. Once the subject values have been reintroduced, I will then delete those copies, but will keep the originals of the first import as they will still be required in the future.
 
-[![](./images/Pipeline/Hydrus4.png){: style="width:800px"}](./images/Pipeline/Hydrus4.png)
+[![](./images/Pipeline/Hydrus4.png){: style="width:680px"}](./images/Pipeline/Hydrus4.png)
+
 <span style="font-size: 80%;">*Bottom left previewed image, its current tags above, and tag panel on right with manual corrections ready to apply*</span>
 
 From here I can proactively check any tags I may have previously had issues with and search for all images by that tag, remove tags if incorrect, maybe even delete images that could be seen as bad data, and overall just skim that the frames I did get were satisfactory.
@@ -101,7 +103,7 @@ I will repeat this process with all new dataset batches I make until the model i
 
 ## Kohya Trainer
 
-!!! info
+!!! info "Things to note before continuing:"
 
     * Card used for training with Kohya SD-Script is a water cooled RTX4090 MSI Suprim Liquid X on my personal machine.
     

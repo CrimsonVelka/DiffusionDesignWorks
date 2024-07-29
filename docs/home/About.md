@@ -28,7 +28,7 @@ Studio Ufotable themed Stable Diffusion 1.x based model
 
 *Img2Img Movie Poster + Inpainting Upscale*
 
-[![](./images/posterimg2img.gif){: style="width:700px"}](./images/posterimg2img.gif)
+[![](./images/posterimg2img.gif){: style="width:680px"}](./images/posterimg2img.gif)
 
 ## Text to Video Models
 

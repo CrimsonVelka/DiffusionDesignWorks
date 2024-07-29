@@ -5,25 +5,25 @@ icon:material/update
 
 ### Manual Review and Clean Up
 
-Ongoing progress of dataset's quality control and clean up:
-
-!!! success
+!!! info "The following content in the current model is undergoing quality control and clean up:"
     * Fate Zero
-        * Episode 1-19 re-extracted, Episodes 1-3 and OP/ED 1 and 2 Completed, rest in progress
+        * <span style="font-size: 90%;">*Episode 1-19 re-extracted, Episodes 1-3 and OP/ED 1 and 2 Completed, manual review and post work still in progress*</span>
     * Fate Stay Night Unlimited Blade Works (TV)
-        * Episode 0-12 re-extracted, Episode 0-2 and OP/ED 1 and 2 Completed, rest in progress
+        * <span style="font-size: 90%;">*Episode 0-12 re-extracted, Episode 0-2 and OP/ED 1 and 2 Completed, manual review and post work still in progress*</span>
     * Fate Stay Night Heaven’s Feel
-        * Movies Re-extracted, Movie 1 and 2 have clean up and stitching finished, 3 still need clean up.
-    * The Garden of Sinners 8 – Epilogue
-        * Re-extracted - Dedup complete, Stitching Complete, Final cropping in progress
-    * The Garden of Sinners 9 - Future Gospel
-        * Re-extracted - Manual review and clean up in progress
-    * The Garden of Sinners 9.5 - Future Gospel: Extra Chorus
-        * Re-extracted - Dedup complete, Stitching Complete, Final Cropping in Progress
+        * <span style="font-size: 90%;">*1 – presage flower: re-extracted, deduped and sorted, undergoing post-processing. manual review need*</span>
+        * <span style="font-size: 90%;">*2 – lost butterfly: re-extracted, deduped and sorted, undergoing post-processing. manual review need*</span>
+        * <span style="font-size: 90%;">*3 – spring song: re-extracted, duplicate removal and sorting in progress, some stitching completed*</span>
+    * The Garden of Sinners 
+        * <span style="font-size: 90%;">*8 – Epilogue: re-extracted, deduped and sorted, undergoing post-processing, manual review done*</span>
+        * <span style="font-size: 90%;">*9 – Future Gospel: re-extracted, clean up in Progress, some stitching completed*</span>
+        * <span style="font-size: 90%;">*9.5 Future Gospel – Extra Chorus: re-extracted, deduped and sorted, undergoing post-processing, manual review done*</span>
     * Fate Stay Night [Réalta Nua]
-        * Re-extracted - Dedup complete, Stitching Complete, Final cropping in progress
+        * <span style="font-size: 80%;">*Opening Animations*</span>
+            * <span style="font-size: 90%;">re-extracted, deduped and sorted, undergoing post-processing. manual review need</span>
     * Fate/Hollow Ataraxia
-        * Re-extracted - Dedup complete, Stitching Complete, Final cropping in progress
+        * <span style="font-size: 80%;">*Opening Animations*</span>
+            * <span style="font-size: 90%;">re-extracted, deduped and sorted, undergoing post-processing. manual review need</span>
 
 
 ### Ready To Train
@@ -33,23 +33,30 @@ Ongoing progress of dataset's quality control and clean up:
 [![](./images/todolist/thumb/Layer-1-Crop.png){: style="width:170px"}](./images/todolist/full/ktrfull.jpg)
 [![](./images/todolist/thumb/Layer-4-Crop.png){: style="width:170px"}](./images/todolist/full/tob.png)
 
-Ready to train on next session - minimal manual edits only:
-!!! example
+
+!!! success "The following content will be included in the next training session - minimal manual edits only:"
     *   Movies
-        *   The Garden of Sinners 3 – Remaining Sense of Pain
-        *   The Garden of Sinners 4 – The Hollow Shrine
-        *   The Garden of Sinners 5 – Paradox Spiral
-        *   The Garden of Sinners 6 – Oblivion Recorder
-        *   The Garden of Sinners 7 – A Study in Murder - Part 2
+        *   The Garden of Sinners 
+            * 3 – Remaining Sense of Pain
+            * 4 – The Hollow Shrine
+            * 5 – Paradox Spiral
+            * 6 – Oblivion Recorder
+            * 7 – A Study in Murder - Part 2
     *   TV 
         *   Katsugeki/Touken Ranbu
         *   Tales of Zestiria the X  (Season 1)
     *   Video Games
         *   Tales of Zestiria
+            * <span style="font-size: 80%;">*Opening Animations and Cutscenes*</span>
         *   Tales of Berseria
+            * <span style="font-size: 80%;">*Opening Animations and Cutscenes*</span>
+        *   Tsukihime -A piece of blue glass moon-
+            * <span style="font-size: 80%;">*Opening Animations*</span>
     *   Mobile
-        *   Tales of Asteria (Only Ufotable Assets)
-        *   Tales of Crestoria (Only Ufotable Assets)
+        *   Tales of Asteria 
+            * <span style="font-size: 80%;">*ufotable assets only*</span>
+        *   Tales of Crestoria
+            * <span style="font-size: 80%;">*ufotable assets only*</span>
 
 ----
 
@@ -60,37 +67,57 @@ Ready to train on next session - minimal manual edits only:
 [![](./images/todolist/thumb/Layer-7-Crop.png){: style="width:170px"}](./images/todolist/full/tos.jpg)
 [![](./images/todolist/thumb/Layer-8-Crop.png){: style="width:170px"}](./images/todolist/full/kny.png)
 
-In the pipeline but not ready due to priority, not directly ufotable content, or limited hard drive space
+!!! example "The following will be included in a future session - not ready, not ufotable content, lower priority, or limited disk space"
 
-!!! example
     *   Movies
-        *   The Garden of Sinners 1 – Overlooking View
-        *   The Garden of Sinners 2 – A Study in Murder - Part 1
+        *   The Garden of Sinners 
+            * <span style="font-size: 80%;">*1 – Overlooking View: Source Obtained, Not Extracted*</span>
+            * <span style="font-size: 80%;">*2 – A Study in Murder - Part 1: Source Obtained, Not Extracted*</span>
         *   Tales of Symphonia
+            * <span style="font-size: 80%;">*Have not finalized a source*</span>
         *   Demon Slayer - Mugen Train
+            * <span style="font-size: 80%;">*Have not finalized a source*</span>
     *   TV
         *   Tales of Zestiria the X (TV - Season 2)
-        *   Today's Menu for the Emiya Family        
-        *   Demon Slayer (4 Seasons)
+            * <span style="font-size: 80%;">*Source Obtained, Not Extracted*</span>
+        *   Today's Menu for the Emiya Family  
+            * <span style="font-size: 80%;">*Source Obtained, Not Extracted*</span>     
+        *   Demon Slayer
+            * <span style="font-size: 80%;">*Have not finalized a source*</span>
     *   Video Games
         *   Tales of Xillia I
+            * <span style="font-size: 80%;">*Openings and cutscenes extracted, Not sorted*</span>
         *   Tales of Xillia II
+            * <span style="font-size: 80%;">*Openings and cutscenes extracted, Not sorted*</span>
         *   Witch on the Holy Night
+            * <span style="font-size: 80%;">*Not ufotable, assembling in-game sprites and CG assets*</span>
         *   Tsukihime -A piece of blue glass moon-
+            * <span style="font-size: 80%;">*Assembling non-ufotable in-game sprites and CG assets*</span>
+    *   Mobile
+        *   Fate Grand Order
+            *   <span style="font-size: 80%;">*[The Garden of Sinners] crossover event*</span>
+                * <span style="font-size: 80%;">*ufotable assets only*</span>
+            *   <span style="font-size: 80%;">*[Fate Zero] crossover event*</span>
+                * <span style="font-size: 80%;">*ufotable assets only*</span>
 
 ----
 
 ### TBA
 
-Waiting on USM decryption for the following games to frame extract cutscenes
-!!! failure
-    *   Tales of Arise (VG)
+!!! failure "Waiting on USM decryption for the following games to frame extract cutscenes"
+    *   Video Games
+        *   Tales of Arise
+            *   <span style="font-size: 80%;">*Have usm video files on standby*</span>
 
-----
-Waiting on releases for the following Ufotable Media:
-!!! failure
-    *   Witch on the Holy Night (Movie)
-    *   Honkai Starrail x Fate Stay Night Unlimited Blade Works (Mobile)
-    *   Untitled Genshin Impact Animation (TV)
+!!! failure "Waiting on releases for the following Ufotable Media:"
+    *   Movies
+        *   Witch on the Holy Night
+            *   <span style="font-size: 80%;">*Have rip of trailer for testing ready*</span>
+    *   TV
+        *   Untitled Genshin Impact Animation
+            *   <span style="font-size: 80%;">*Have rip of trailer for testing ready*</span>
+    *   Mobile
+        *   Honkai Starrail 
+            *   <span style="font-size: 80%;">*[Fate Stay Night Unlimited Blade Works] crossover event*</span>
 
 ----
