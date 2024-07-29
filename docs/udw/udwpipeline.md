@@ -3,7 +3,8 @@ icon:material/pipe
 
 ## Modifying a preset repo to handle an unexpected developments
 
-By the time I trained out several versions of UDW, I got familiar enough with the process where I was able to make changes as needed whenever something would arise in the process. Whether changing up the dataset creation process, or how I was automating the process as I got experienced enough to figure out where I can fit in pieces to reduce my workload. I learned a lot of python along the way and more about the inner workings of model training. As stated before, I got a jump start using [Anime Screenshot Pipeline](https://github.com/cyber-meow/anime_screenshot_pipeline) but ultimately my end result in changing the pipeline workflow looks unrecognizable to even the developer's current version of the process.
+After several successful model trainings, I had become dissatisfied with the quality of the dataset I originally produced with [Anime Screenshot Pipeline](https://github.com/cyber-meow/anime_screenshot_pipeline). It had some short commings with the quality of data and some steps and scripting were unnecessary for what I needed. Through repurposing and editing some of tools and scripts, I began redoing the entire dataset from once I got comfortable with the entire training process. By the time I reached my current workflow and results, my pipeline workflow looks unrecognizable to even the developer's current version of the process. There is some more manual steps involved but not from lack of ability, but rather the need of human supervision in so places where automation is not yet up to the task.
+
 
 !!! info "Things to note before continuing:"
     

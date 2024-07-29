@@ -2,13 +2,13 @@ icon:material/ufo-outline
 # Unlimited Diffusion Works (UDW)
 ## Overview
 
-Unlimited Diffusion Works is a model based on the works of animation studio ufotable, whos works including:
+Unlimited Diffusion Works is a model based on the works of animation studio ufotable, whose works include:
 
 * 14 Animated Films
 * 15 TV Shows 
 * 17 Video Game Opening Animations and Cutscenes
 
-With this much material overarching several different franchises handed by different animators displaying a variety of styles, settings, and characters; while all the works still having the studio's distinct finish, it is a great source of material to make a model that can stay consistent across the board and still make unique images that don't look too much like carbon copies of what it's based on. 
+This model will focus on their studio's adaptations of works produced by Type-Moon, and to include collaborations for series published by Namco Bandai to have a set level of character design and color grading consistency.
 
 ## Dataset
 
@@ -20,11 +20,8 @@ With this much material overarching several different franchises handed by diffe
 
 This model’s current version was trained on 09/2023, with around 200k images over NovelAI v1, uses the following content from studio ufotable:
 
-### ufotable sources
-
-!!! abstract
-    *In Production Order*
-
+!!! abstract "ufotable sources"
+    
     * Fate Zero 
     * The Garden of Sinners
         * 8 - Epilogue
@@ -38,12 +35,10 @@ This model’s current version was trained on 09/2023, with around 200k images o
         * 2 - lost butterfly
         * 3 - spring song
 
-### Non-themed sources 
-
 In addition to ufotable, I added for experimentation purposes the dataset from the following non ufotable works for additional data and regularization purposes:
 
-!!! abstract
-    * Lord El-Melloi II Case Files (TV – Studio Troyca)
+!!! abstract "Non-themed sources"
+    * Lord El-Melloi II Case Files (studio TROYCA)
     * *additional miscellaneous non-animation data*
 
 
@@ -86,7 +81,4 @@ Dataset was created by running Blu-ray rips of the listed content through ffmpeg
 [![](./images/overview/conceptart/63322-1230264608.png){: style="width:340px"}](./images/overview/conceptart/63322-1230264608.png)
 [![](./images/overview/conceptart/63324-2435138676.png){: style="width:340px"}](./images/overview/conceptart/63324-2435138676.png)
 
-
-## Status Updates
-
-After many trainings however, I had become dissatisfied with the quality of the dataset it originally produced, and didn't even use parts of the for what I needed. Through repurposing and editing some of tools and scripts, I redid the entire dataset from scratch after several months of doing initial training tests before committing to an overall.
+----
