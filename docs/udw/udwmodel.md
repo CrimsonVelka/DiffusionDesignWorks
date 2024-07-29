@@ -42,7 +42,7 @@ In addition to ufotable, I added for experimentation purposes the dataset from t
     * *additional miscellaneous non-animation data*
 
 
-Dataset was created by running Blu-ray rips of the listed content through ffmpeg as part of the aid of [Anime Screenshot Pipeline](https://github.com/cyber-meow/anime_screenshot_pipeline) on Github back in February of 2023.
+The original dataset was created by running Blu-ray rips of the listed content through ffmpeg as part of the aid of [Anime Screenshot Pipeline](https://github.com/cyber-meow/anime_screenshot_pipeline) on Github back in February of 2023. But I have since used [my own workflow pipeline processes](./udwpipeline.md) and modified or new tools to improve the training and creation of the current model back in 09/2023.
 
 
 ## Sample Gallery
