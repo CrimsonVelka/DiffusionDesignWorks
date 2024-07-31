@@ -102,7 +102,7 @@ icon:material/update
 
 ----
 
-### TBA
+### TBD
 
 !!! failure "Waiting on USM decryption for the following games to frame extract cutscenes"
     *   Video Games

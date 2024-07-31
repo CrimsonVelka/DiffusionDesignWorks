@@ -76,7 +76,7 @@ theme:
 nav:
   - Home: index.md
   - About:
-      - 'Introduction': home/About.md
+      - 'Introduction': About.md
   - Unlimited Diffusion Works:
       - 'Overview': udw/udwmodel.md
       - 'Status Updates': udw/todolist.md

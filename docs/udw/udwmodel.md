@@ -8,7 +8,7 @@ Unlimited Diffusion Works is a model based on the works of animation studio ufot
 * 15 TV Shows 
 * 17 Video Game Opening Animations and Cutscenes
 
-This model will focus on their studio's adaptations of works produced by Type-Moon, and to include collaborations for series published by Namco Bandai to have a set level of character design and color grading consistency.
+This model will focus on their studio's adaptations of works by Type-Moon, and will include their collaborations on series produced by Namco Bandai, to have a set level of character design, color grading, quality consistency.
 
 ## Dataset
 
@@ -18,7 +18,7 @@ This model will focus on their studio's adaptations of works produced by Type-Mo
 [![](./images/overview/dataset/thumb/hf1kv1-thumb.png){: style="width:170px"}](./images/overview/dataset/full/hf1kv1.jpg)
 
 
-This model’s current version was trained on 09/2023, with around 200k images over NovelAI v1, uses the following content from studio ufotable:
+This model’s current version was trained on 09/2023, with around 200k images finetuned over NovelAI v1, uses the following content from studio ufotable:
 
 !!! abstract "ufotable sources"
     
@@ -35,14 +35,14 @@ This model’s current version was trained on 09/2023, with around 200k images o
         * 2 - lost butterfly
         * 3 - spring song
 
-In addition to ufotable, I added for experimentation purposes the dataset from the following non ufotable works for additional data and regularization purposes:
+In addition to ufotable, I added for experimentation purposes content from the following non-ufotable works for additional data and regularization purposes:
 
 !!! abstract "Non-themed sources"
     * Lord El-Melloi II Case Files (studio TROYCA)
     * *additional miscellaneous non-animation data*
 
 
-The original dataset was created by running Blu-ray rips of the listed content through ffmpeg as part of the aid of [Anime Screenshot Pipeline](https://github.com/cyber-meow/anime_screenshot_pipeline) on Github back in February of 2023. But I have since used [my own workflow pipeline processes](./udwpipeline.md) and modified or new tools to improve the training and creation of the current model back in 09/2023.
+The original dataset was created by running Blu-ray rips of the listed content through ffmpeg as part of the aid of [Anime Screenshot Pipeline](https://github.com/cyber-meow/anime_screenshot_pipeline) on Github back in February of 2023. But I have since used [my own workflow pipeline processes](./udwpipeline.md) and modified or used new tools to improve the training and creation of the current model back in 09/2023.
 
 
 ## Sample Gallery

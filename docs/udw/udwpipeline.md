@@ -52,7 +52,7 @@ This situation would force me to start buying hard drives and to looking into NA
 
 Stable Diffusion base models use CLIP captioning to tag their datasets with natural language for prompt keywords. NovelAI’s anime finetune of SD1.4 instead used English based Japanese imageboard site Danbooru’s key word tagging format for prompting instruction. This is because Novel AI's parent company, Anlatan, scrapped Danbooru's site for all the images used in the training of their model, and used their metadata as the standard for prompting their model. Because it seemed that keyword prompting performed better than just pure natural language, and the tool creators made popular tools for anime trainers based on NovelAI's content, future dreambooths, LoRA networks, and other checkpoints types followed this format for not just anime, but realism models as well.
 
-[![](./images/Pipeline/tagger menu.PNG)](./images/Pipeline/tagger menu.PNG)
+[![](./images/Pipeline/tagger menu.PNG){: style="width:680px"}](./images/Pipeline/tagger menu.PNG)
 
 
 I initially used the built in Automatic1111 tagger when starting out making Textual Inversions and LoRAs and worked fine for the standard images you would find on the internet. It will generate a sidecar text file that will be read by the trainer to associate the metadata with the image. The problem comes when working on 16:9 images, as all the classifiers out in the wild were trained mostly with either 1:1 aspect images due to SD1.x early on requiring 512x512 data, or whatever sizable collection of images trainer could collect in other resolution sizes for regularization. 
@@ -119,7 +119,13 @@ I will repeat this process with all new dataset batches I make until the model i
     
     * Due to the above, I focused more on gathering the dataset and do as much quality work as I could before committing to a very lengthy training session.
 
-Japanese developer Kohya-SS’s SD Script package is an old but very consistent way training package. While it mostly supports LoRA and other network-based checkpoint trainings, it still supports full finetune support for SD1 models. It only needs to be pointed to a training directory, will check the main training folder and the regulation folder if enabled, and will then just follow the training parameters set in the powershell script and output the checkpoint when done. It borrows from the NAI training settings and incorporates the aspect ratio bucketing so the resolution sizes are not restricted to 1:1 aspect image
+Japanese developer Kohya-SS’s SD Script package is an old but very consistent way training package. While it mostly supports LoRA and other network-based checkpoint trainings, it still supports full finetune support for SD1 models. It only needs to be pointed to a training directory, will check the main training folder and the regulation folder if enabled, and will then just follow the training parameters set in the powershell script and output the checkpoint when done. 
+
+[![](./images/Pipeline/sdbuckets.JPG){: style="width:680px"}](./images/Pipeline/sdbuckets.JPG)
+
+<span style="font-size: 80%;">*Kohya SD-Script running the aspect bucket step right before training begins, processing 185842 images for this session*</span>
+
+It borrows from the NAI training settings and incorporates the aspect ratio bucketing so the resolution sizes are not restricted to 1:1 aspect image
 
 ## Post Training Review
 After the model is trained, I will run several “templates” to test changes between a previous version of the model compared to the current one. I will note if there are any visual improvements, changes in the look of backgrounds, character feature consistencies, detail in non-upscaled generations, and if any errors I caught in the previous cycle were fixed. I will also take prompts of other stable diffusion images I see in the wild to test how others would prompt on this model in hopes of finding tags prompts that don’t aren’t producing intended results so I can then note down to check on Hydrus. 

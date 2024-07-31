@@ -73,7 +73,7 @@ Since specific tuning is not required, we are open to using more types of movies
 Say we have access to a collection of videos. What we can create a [script that will generate timestamps](https://www.youtube.com/watch?v=nOeaFEHuFyM), similar to chapter select codes for Blu-Rays or steaming services, to mark every time there is a jumpcut to a new scene or camera shot. This will get written onto a sidecar file. 
 Then with ffmpeg, use the video clip command with the sidecar automate the video clips slices. These clips will then be tagged and captioned and can be organized within Hydrus (Hydrus also can organize video format files) and use the same image organization tools to manually review tags and captions every time we need to train the model. 
 
-!!! tip "Potential Prompt Improvement"
+!!! tip "Potential Prompting Improvement"
 
     * An addition step that can be performed to improve prompting results on the finetune is to introduce the Danbooru/Novel AI tag format as well as keeping the natural language captioning. Keeping the tagging consistent across both the main model and the motion model will cause less confusion for the final generation as both models will have a similar format to follow. 
     * A method to do this would be to take some frames from the peak of each clip, run the SD Tagger on it, and then apply those tags onto its corresponding video clip on Hydrus. 
@@ -93,7 +93,7 @@ Steps:
 6. Video2dataset
     * Export to trainer
 7. Debug
-    * Then Rinse and Repeat
+    * Rinse and Repeat
 
 From there it would be business as usual on the training front, depending on whether our local resources are sufficent to run the job ourselves.
 
