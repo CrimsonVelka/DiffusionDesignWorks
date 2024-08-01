@@ -123,10 +123,19 @@ Japanese developer Kohya-SS’s SD Script package is an old but very consistent 
 
 [![](./images/Pipeline/sdbuckets.JPG){: style="width:680px"}](./images/Pipeline/sdbuckets.JPG)
 
-<span style="font-size: 80%;">*Kohya SD-Script running the aspect bucket step right before training begins, processing 185842 images for this session*</span>
+<span style="font-size: 80%;">*Kohya SD-Script running the aspect bucket step for 768x768 resolutions right before training begins, processing 185842 images for this session*</span>
 
-It borrows from the NAI training settings and incorporates the aspect ratio bucketing so the resolution sizes are not restricted to 1:1 aspect image
+The default training settings are borrowed from the NAI training settings and includes the aspect ratio bucketing so the resolution sizes are not restricted to 1:1 aspect image, but resolution size will be dictated by hardware used for training so its defaulted to 512x512 but can be adjusted to be higher such as 1024x1024 like SDXL.
 
 ## Post Training Review
-After the model is trained, I will run several “templates” to test changes between a previous version of the model compared to the current one. I will note if there are any visual improvements, changes in the look of backgrounds, character feature consistencies, detail in non-upscaled generations, and if any errors I caught in the previous cycle were fixed. I will also take prompts of other stable diffusion images I see in the wild to test how others would prompt on this model in hopes of finding tags prompts that don’t aren’t producing intended results so I can then note down to check on Hydrus. 
+After the model is trained, I will run several “templates” to test changes between a previous version of the model compared to the current one. I will note if there are any visual improvements, changes in the look of backgrounds, character feature consistencies, detail in non-upscaled generations, and if any errors I caught in the previous cycle were fixed. 
 
+[![](./images/Pipeline/v7.png){: style="width:226px"}](./images/Pipeline/v7.png)
+[![](./images/Pipeline/v8.png){: style="width:226px"}](./images/Pipeline/v8.png)
+[![](./images/Pipeline/v9.png){: style="width:226px"}](./images/Pipeline/v9.png)
+
+<span style="font-size: 80%;">*Same seed, varied results with as dataset arrangement is updated through Alpha v7, v8, and v9 respectively.*</span>
+
+Per the example, you can see that v8's default frame changed quite a bit to portray the subject farther away or smaller. After some tag correction in the the image composition category (Portrait (Face), Upper Body, Cowboy Shot, Full Body, etc), and some new data with preemptive composition tagging as well as new cropped image with facial close ups, we nudged back close to the v7 perspective with fuller face detail although the subject is not resting the lantern anymore on a foreground surface. It won't always be an similar frame or pose match with better quality improvement or just a concept understanding, but we can correct unexpected behaviors.
+
+Along with my testing my own seeds and settings, I will also take prompts of other stable diffusion images I see in the wild to test how others would prompt on this model in hopes of finding tags prompts that don’t aren’t producing intended results so I can then note down to check on Hydrus. 
