@@ -20,10 +20,10 @@ icon:material/update
         * <span style="font-size: 90%;">*9.5 Future Gospel – Extra Chorus: re-extracted, deduped and sorted, undergoing post-processing, manual review done*</span>
     * Fate Stay Night [Réalta Nua]
         * <span style="font-size: 80%;">*Opening Animations*</span>
-            * <span style="font-size: 90%;">re-extracted, deduped and sorted, undergoing post-processing. manual review need</span>
+            * <span style="font-size: 90%;">*re-extracted, deduped and sorted, undergoing post-processing. manual review need*</span>
     * Fate/Hollow Ataraxia
         * <span style="font-size: 80%;">*Opening Animations*</span>
-            * <span style="font-size: 90%;">re-extracted, deduped and sorted, undergoing post-processing. manual review need</span>
+            * <span style="font-size: 90%;">*re-extracted, deduped and sorted, undergoing post-processing. manual review need*</span>
 
 
 ### Ready To Train
@@ -69,19 +69,27 @@ icon:material/update
 
 !!! example "The following will be included in a future session - not ready, not ufotable content, lower priority, or limited disk space"
 
+    *   Artbooks
+        *   [The Garden of Sinners: The Animation by Ufotable](./images/todolist/artbook/81WRhFUmhFL._SL1500_.jpg)
+            * <span style="font-size: 80%;">*Have physical source, needs to be scanned*</span>
+        *   [The Garden of Sinners: Complete Illustration Art Book by Takeuchi Takashi](./images/todolist/artbook/9784062186971_w.jpg)
+            * <span style="font-size: 80%;">*Have physical source, needs to be scanned*</span>
+
     *   Movies
         *   The Garden of Sinners 
-            * <span style="font-size: 80%;">*1 – Overlooking View: Source Obtained, Not Extracted*</span>
-            * <span style="font-size: 80%;">*2 – A Study in Murder - Part 1: Source Obtained, Not Extracted*</span>
+            * 1 – Overlooking View
+                * <span style="font-size: 80%;">*Have source media, not extracted*</span>
+            * 2 – A Study in Murder - Part 1: 
+                * <span style="font-size: 80%;">*Have source media, not extracted*</span>
         *   Tales of Symphonia
             * <span style="font-size: 80%;">*Have not finalized a source*</span>
         *   Demon Slayer - Mugen Train
             * <span style="font-size: 80%;">*Have not finalized a source*</span>
     *   TV
         *   Tales of Zestiria the X (TV - Season 2)
-            * <span style="font-size: 80%;">*Source Obtained, Not Extracted*</span>
+            * <span style="font-size: 80%;">*Have source media, not extracted*</span>
         *   Today's Menu for the Emiya Family  
-            * <span style="font-size: 80%;">*Source Obtained, Not Extracted*</span>     
+            * <span style="font-size: 80%;">*Have source media, not extracted*</span>     
         *   Demon Slayer
             * <span style="font-size: 80%;">*Have not finalized a source*</span>
     *   Video Games
@@ -95,9 +103,11 @@ icon:material/update
             * <span style="font-size: 80%;">*Assembling non-ufotable in-game sprites and CG assets*</span>
     *   Mobile
         *   Fate Grand Order
-            *   <span style="font-size: 80%;">*[The Garden of Sinners] crossover event*</span>
-                * <span style="font-size: 80%;">*ufotable assets only*</span>
-            *   <span style="font-size: 80%;">*[Fate Zero] crossover event*</span>
+            *   [The Garden of Sinners] crossover event
+                * <span style="font-size: 80%;">*ufotable assets and promotional animation only*</span>
+            *   [Fate Zero] crossover event
+                * <span style="font-size: 80%;">*ufotable promotional animation only*</span>
+            *   [Fate Stay Night - Heaven's Feel] movie premiere promotions
                 * <span style="font-size: 80%;">*ufotable assets only*</span>
 
 ----
@@ -109,15 +119,28 @@ icon:material/update
         *   Tales of Arise
             *   <span style="font-size: 80%;">*Have usm video files on standby*</span>
 
+!!! failure "Awaiting sale or alternate source for follow collections"
+    *   Artbook
+        *   ufotable 
+            *   [The Garden of Sinners - Seikaisha (Background Art Book)](./images/todolist/artbook/91vngIKYgCL._SL1500_.jpg)
+            *   [The Garden of Sinners - Future Gospel New Year Illustrations Postcards [Comiket 85]](./images/todolist/artbook/000.jpg)
+                * <span style="font-size: 80%;">*Only 1500 exist. A scan of this exists online but signs of a dust or a fuzz layer on images from scanner used obscures some detailing*</span>
+            *   [Fate/Zero - Seikaisha (Background Art Book)](./images/todolist/artbook/91NlW-xGcBL._SL1500_.jpg)
+            *   [Fate/Stay night 'Unlimited Blade Works' - Seikaisha (Background Art Book)](./images/todolist/artbook/9784062198738_w.jpg)
+            *   [Fate/Stay Night 'Unlimited Blade Works' S1 - Settei Shiryoushuu (Setting Material) [Comiket 87]](./images/todolist/artbook/55C0AAA247644B001F.jpg)
+            *   [Fate/Stay Night 'Unlimited Blade Works' S2- Settei Shiryoushuu (Setting Material) [Comiket 88]](./images/todolist/artbook/55C0AA9F470499000C.jpg)
+            *   [Fate/Stay Night 'Unlimited Blade Works' Character Complete Key Animations [Comiket 87, 88, 89]](./images/todolist/artbook/55C0AA924A17CD0025.jpg)
+                *   <span style="font-size: 80%;">*There are 11 of these, honestly very low priority*</span>
+
 !!! failure "Waiting on releases for the following Ufotable Media:"
     *   Movies
         *   Witch on the Holy Night
-            *   <span style="font-size: 80%;">*Have rip of trailer for testing ready*</span>
+            *   <span style="font-size: 80%;">*Have rips of the trailers for quality source testing on standby: [#1](https://www.youtube.com/watch?v=OujIyh_h-M4), [#2](https://www.youtube.com/watch?v=IqUZ6y6ldeA)*</span>
     *   TV
         *   Untitled Genshin Impact Animation
-            *   <span style="font-size: 80%;">*Have rip of trailer for testing ready*</span>
+            *   <span style="font-size: 80%;">*[Have rip of trailer for quality source testing on standby](https://www.youtube.com/watch?v=V07G0_PE2CE)*</span>
     *   Mobile
         *   Honkai Starrail 
-            *   <span style="font-size: 80%;">*[Fate Stay Night Unlimited Blade Works] crossover event*</span>
+            *   <span style="font-size: 80%;">*[Fate Stay Night - Unlimited Blade Works] crossover event*</span>
 
 ----

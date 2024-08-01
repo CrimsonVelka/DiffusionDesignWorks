@@ -134,7 +134,7 @@ After the model is trained, I will run several “templates” to test changes b
 [![](./images/Pipeline/v8.png){: style="width:226px"}](./images/Pipeline/v8.png)
 [![](./images/Pipeline/v9.png){: style="width:226px"}](./images/Pipeline/v9.png)
 
-<span style="font-size: 80%;">*Same seed, varied results with as dataset arrangement is updated through Alpha v7, v8, and v9 respectively.*</span>
+<span style="font-size: 80%;">*Same seed, varied results as dataset arrangement is updated through Alpha v7, v8, and v9 respectively.*</span>
 
 Per the example, you can see that v8's default frame changed quite a bit to portray the subject farther away or smaller. After some tag correction in the the image composition category (Portrait/Face, Upper Body, Cowboy Shot, Full Body, etc), and some new data with preemptive composition tagging as well as [new cropped image](datasetpostprocess.md/#cropping) with facial close ups, we nudged back close to the v7 perspective with fuller face detail although the subject is not resting the lantern anymore on a foreground surface. It won't always be a similar frame or pose match with better quality improvement or just a concept understanding, but we can correct unexpected behaviors.
 
