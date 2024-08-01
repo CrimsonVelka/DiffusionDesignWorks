@@ -31,7 +31,7 @@ The first change I made to the pipeline was the [`ffmpeg`](https://www.ffmpeg.or
 However, I came to find out much later there was a large spread of false positive frame removals for unknown reasons, and false negatives of frames that were kept from a combination of mpdecimate not considering jump cuts that repeat scenes after several cuts, and FiftyOne failing the second filter due to the Blu-ray encodings introducing enough pixelation changes between frames that it would defeat both filter’s deletion threshold. 
 
 ```
-ffmpeg -hwaccel cuda -i "video.m2ts" "Name_Episode Number"_%d.png
+ffmpeg -hwaccel cuda -i "video.m2ts" "Name_EpisodeNumber"_%d.png
 ```
 
 Because the loss of data was too significant to ignore, I stopped using mpdecimate and let ffmpeg run the simple command above to extract every single frame in full. Then instead of using the FiftyOne's CV, I began using a [script by space-nuko](https://github.com/space-nuko/sd-webui-utilities/blob/master/tagtools.py) that would sort the "forzen frames" based on the image file's hash value and would only move all the flagged frames to a different folder and not delete the rest of the images, allowing for manual review in the future. 
@@ -42,7 +42,7 @@ python tagtools.py -r dedup "\path\to\folder"
 
 [![](./images/Pipeline/scene folders.PNG){: style="width:680px"}](./images/Pipeline/scene folders.PNG)
 
-<span style="font-size: 80%;">*340 folders, but this episode (Unlimited Blade Works, Ep 3) had 384 total jump cuts, the rest are not usable or in different sorting folders for stitching and cropping.*</span>
+<span style="font-size: 80%;">*340 folders that will have its content sorted, this episode (Unlimited Blade Works, Ep 3) had 384 total unique jump cuts, the rest had usable data or are in different sorting folders for [stitching and cropping](datasetpostprocess.md/).*</span>
 
 The downside to this new method is that increased use of hard drive space from not just more images, but the file size was doubled or tripled in some cases. Mpdecimate's outputs were shrinking the .png file size to under 1MB, and ffmpeg on it's own does not have settings to reduce file sizes without destroying the pixelation of the output. 
 
@@ -136,6 +136,6 @@ After the model is trained, I will run several “templates” to test changes b
 
 <span style="font-size: 80%;">*Same seed, varied results with as dataset arrangement is updated through Alpha v7, v8, and v9 respectively.*</span>
 
-Per the example, you can see that v8's default frame changed quite a bit to portray the subject farther away or smaller. After some tag correction in the the image composition category (Portrait (Face), Upper Body, Cowboy Shot, Full Body, etc), and some new data with preemptive composition tagging as well as new cropped image with facial close ups, we nudged back close to the v7 perspective with fuller face detail although the subject is not resting the lantern anymore on a foreground surface. It won't always be an similar frame or pose match with better quality improvement or just a concept understanding, but we can correct unexpected behaviors.
+Per the example, you can see that v8's default frame changed quite a bit to portray the subject farther away or smaller. After some tag correction in the the image composition category (Portrait/Face, Upper Body, Cowboy Shot, Full Body, etc), and some new data with preemptive composition tagging as well as [new cropped image](datasetpostprocess.md/#cropping) with facial close ups, we nudged back close to the v7 perspective with fuller face detail although the subject is not resting the lantern anymore on a foreground surface. It won't always be a similar frame or pose match with better quality improvement or just a concept understanding, but we can correct unexpected behaviors.
 
 Along with my testing my own seeds and settings, I will also take prompts of other stable diffusion images I see in the wild to test how others would prompt on this model in hopes of finding tags prompts that don’t aren’t producing intended results so I can then note down to check on Hydrus. 
