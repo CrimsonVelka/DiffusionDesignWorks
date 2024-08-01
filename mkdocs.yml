@@ -35,6 +35,7 @@ theme:
     - mkdocs-video
  
   markdown_extensions:
+    - abbr
     - admonition
     - pymxdownx.details
     - pymdownx.superfences
@@ -78,15 +79,15 @@ nav:
   - About:
       - 'Introduction': About.md
   - Unlimited Diffusion Works:
-      - 'Overview': udw/udwmodel.md
-      - 'Status Updates': udw/todolist.md
-      - 'Pipeline': udw/udwpipeline.md
-      - 'Post Processing': udw/datasetpostprocess.md
-      - 'Troubleshooting Flaws': udw/flaws.md 
+      - 'Overview': pages/udw/udwmodel.md
+      - 'Status Updates': pages/udw/todolist.md
+      - 'Pipeline': pages/udw/udwpipeline.md
+      - 'Post Processing': pages/udw/datasetpostprocess.md
+      - 'Troubleshooting Flaws': pages/udw/flaws.md 
   - Motion Model Diffusion:
-      - 'AnimateDiff + UDW': motion/motiondiffusion.md
+      - 'AnimateDiff + UDW': pages/motion/motiondiffusion.md
   #- Closing:
-      - 'Lessons Learned': faq/lessonslearned.md
+      - 'Lessons Learned': pages/faq/lessonslearned.md
   #- Blog:
       #- blog/index.md    
 
