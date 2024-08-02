@@ -39,9 +39,11 @@ Services like Luma do have a better quality to their video generations, even whe
 ### Luma Img2Vid Examples
 
 *Starting Source Images*
+
 [![](./images/LumaOriginals.png){: style="width:680px"}](./images/LumaOriginals.png)
 
 *Generated Results for Img2Vid*
+
 <iframe src="https://files.catbox.moe/csbue6.mp4" width= "340" height= "188" frameborder="0" allow="fullscreen"></iframe>
 <iframe src="https://files.catbox.moe/9zzjt4.mp4" width= "340" height= "188" frameborder="0" allow="fullscreen"></iframe>
 <iframe src="https://files.catbox.moe/4kj2le.mp4" width= "680" height= "376" frameborder="0" allow="fullscreen"></iframe>
