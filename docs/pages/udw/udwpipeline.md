@@ -24,11 +24,11 @@ After several successful model trainings, I had become dissatisfied with the qua
 
 ## Frame Extraction 
 
-The first change I made to the pipeline was the [`ffmpeg`](https://www.ffmpeg.org/) script provided. The Pipeline used a script that would run the mpdecimate command to remove duplicate or “frozen frames”, moments in the animation where there is no movement, as `ffmpeg` is “extracting” the frames to condense down the frames to a final output around a 10th of the original size. Then a secondary filter using a computer vision model through a Jupyter script using `FiftyOne` would do one last sweep of any frozen frames mpdecimate would've missed to reduce the file size even further.
+The first change I made to the pipeline was the [`ffmpeg`](https://www.ffmpeg.org/) script provided. The Pipeline used a script that would run the mpdecimate command to remove duplicate or “frozen frames”, moments in the animation where there is no movement, as `ffmpeg` is “extracting” the frames to condense down the frames to a final output around one tenth of the original size. Then a secondary filter using a computer vision model through a Jupyter script using `FiftyOne` would do one last sweep of any frozen frames mpdecimate would've missed to reduce the file size even further.
 
 [![](./images/Pipeline/Frame Extraction Header.png){: style="width:680px"}](./images/Pipeline/Frame Extraction Header.png)
 
-However, I came to find out much later there was a large spread of false positive frame removals for unknown reasons, and false negatives of frames that were kept from a combination of mpdecimate not considering jump cuts that repeat scenes after several cuts, and FiftyOne failing the second filter due to the Blu-ray encodings introducing enough pixelation changes between frames that it would defeat both filter’s deletion threshold. 
+However, I came to find out much later there was a large spread of false positive frame removals for unknown reasons, and false negatives of frames that were kept from a combination of mpdecimate not considering jump cuts that repeat scenes after several cuts, and FiftyOne failing the second filter due to the Blu-ray encodings introducing enough pixelation changes between frames that it would defeat both filters' deletion threshold. 
 
 ```
 ffmpeg -hwaccel cuda -i "video.m2ts" "Name_EpisodeNumber"_%d.png

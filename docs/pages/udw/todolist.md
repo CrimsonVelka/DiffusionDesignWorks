@@ -123,14 +123,14 @@ icon:material/update
     *   Artbook
         *   ufotable 
             *   [The Garden of Sinners - Seikaisha (Background Art Book)](./images/todolist/artbook/91vngIKYgCL._SL1500_.jpg)
-            *   [The Garden of Sinners - Future Gospel New Year Illustrations Postcards [Comiket 85]](./images/todolist/artbook/000.jpg)
-                * <span style="font-size: 80%;">*Only 1500 exist. A scan of this exists online but signs of a dust or a fuzz layer on images from scanner used obscures some detailing*</span>
+            *   [The Garden of Sinners - Future Gospel New Years Illustrations Postcards [Comiket 85]](./images/todolist/artbook/000.jpg)
+                * <span style="font-size: 80%;">*A scan of this exists online but what looks to be dust or fuzz on the images from when it was scanned is obscuring fine details.*</span>
             *   [Fate/Zero - Seikaisha (Background Art Book)](./images/todolist/artbook/91NlW-xGcBL._SL1500_.jpg)
             *   [Fate/Stay night 'Unlimited Blade Works' - Seikaisha (Background Art Book)](./images/todolist/artbook/9784062198738_w.jpg)
             *   [Fate/Stay Night 'Unlimited Blade Works' S1 - Settei Shiryoushuu (Setting Material) [Comiket 87]](./images/todolist/artbook/55C0AAA247644B001F.jpg)
             *   [Fate/Stay Night 'Unlimited Blade Works' S2- Settei Shiryoushuu (Setting Material) [Comiket 88]](./images/todolist/artbook/55C0AA9F470499000C.jpg)
             *   [Fate/Stay Night 'Unlimited Blade Works' Character Complete Key Animations [Comiket 87, 88, 89]](./images/todolist/artbook/55C0AA924A17CD0025.jpg)
-                *   <span style="font-size: 80%;">*There are 11 of these, honestly very low priority*</span>
+                *   <span style="font-size: 80%;">*There's 10 of these, very low priority in seeking out product or scans of it other than to obtain it's included lineart image. [#1](./images/todolist/artbook/678218.jpg), [#2](./images/todolist/artbook/686658.jpg)*</span>
 
 !!! failure "Waiting on releases for the following Ufotable Media:"
     *   Movies
