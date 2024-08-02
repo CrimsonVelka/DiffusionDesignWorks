@@ -56,10 +56,9 @@ Stable Diffusion base models use CLIP captioning to tag their datasets with natu
 
 [![](./images/Pipeline/tagger menu.PNG){: style="width:680px"}](./images/Pipeline/tagger menu.PNG)
 
+<span style="font-size: 80%;">*Automatic1111's Tagger extension menu displaying "Batch from Directory" mode*</span>
 
 I initially used the built in Automatic1111 tagger when starting out making Textual Inversions and LoRAs and worked fine for the standard images you would find on the internet. It will generate a sidecar text file that will be read by the trainer to associate the metadata with the image. The problem comes when working on 16:9 images, as all the classifiers out in the wild were trained mostly with either 1:1 aspect images due to SD1.x early on requiring 512x512 data, or whatever sizable collection of images trainer could collect in other resolution sizes for regularization. 
-
-The 16:9 ratio confused the classifiers and generate an absurd amount of false positive tagging of character subjects onto all sorts of images that were not character focused; a scenery shot, item focus shots, transitioning scenes, logos and texts, panning of the environment before a subject walks into the shot, a magical explosion on screen. This incorrect info would result in generations where the subject would not appear in the image, or would appear fused into parts of a scenery, special effects shots, or just shots of empty hallways and unprompted backdrop focused images. 
 
 ??? Warning "Examples of how the mistagging problem manifested in a 02/2023 finetune attempt:"
      <span style="font-size: 95%;">*Yea I don't think these were normal...*</span>
@@ -70,6 +69,8 @@ The 16:9 ratio confused the classifiers and generate an absurd amount of false p
     [![](./images/Pipeline/busted/4.png){: style="width:329px"}](./images/Pipeline/busted/4.png)
     [![](./images/Pipeline/busted/7.png){: style="width:329px"}](./images/Pipeline/busted/7.png)
     [![](./images/Pipeline/busted/6.png){: style="width:329px"}](./images/Pipeline/busted/6.png)
+
+The 16:9 ratio confused the classifiers and produced a high amount of false positives tagging character subjects onto all sorts of images that were not character focused; such as scenery shots, item focus shots, transitioning scenes, logos and texts, panning of the environment before a subject walks into the shot, a magical explosion on screen. This incorrect info resulted in generations similar to the ones above, subjects would not appear in the image, or would appear fused into parts of a scenery, special effects shots or be embeded with them, or images with empty settings that look like should've contained someone in it. 
 
 ### Face Detector for fixing character tags
 
@@ -121,11 +122,11 @@ I will repeat this process with all new dataset batches I make until the model i
     
     * Due to the above, I focused more on gathering the dataset and do as much quality work as I could before committing to a very lengthy training session.
 
-Japanese developer Kohya-SS’s SD Script package is an old but very consistent way training package. While it mostly supports LoRA and other network-based checkpoint trainings, it still supports full finetune support for SD1 models. It only needs to be pointed to a training directory, will check the main training folder and the regulation folder if enabled, and will then just follow the training parameters set in the powershell script and output the checkpoint when done. 
+Japanese developer Kohya-SS’ [SD Script](https://github.com/kohya-ss/sd-scripts) package is an older but consistent training package. While it mostly supports LoRA and other network-based checkpoint trainings, it still supports full finetune training for SD1.x and XL checkpoints. It only needs to be pointed to a training directory, will check the main training folder and the regulation folder if enabled, and will then just follow the training parameters set in the powershell script and output the checkpoint when done. 
 
 [![](./images/Pipeline/sdbuckets.JPG){: style="width:680px"}](./images/Pipeline/sdbuckets.JPG)
 
-<span style="font-size: 80%;">*SD-Script running the aspect bucket for 768x768 resolutions right before training step begins.*</span>
+<span style="font-size: 80%;">*SD-Script running the aspect bucket for 768x768 resolutions right before the training step.*</span>
 
 The default training settings are borrowed from the NAI training settings and includes the aspect ratio bucketing so the resolution sizes are not restricted to 1:1 aspect image, but resolution size will be dictated by hardware used for training so its defaulted to 512x512 but can be adjusted to be higher such as 1024x1024 like SDXL.
 
@@ -140,4 +141,4 @@ After the model is trained, I will run several “templates” to test changes b
 
 Per the example, you can see that v8's default frame changed quite a bit to portray the subject farther away or smaller. After some tag correction in the the image composition category (Portrait/Face, Upper Body, Cowboy Shot, Full Body, etc) and some new data with preemptive composition tagging, as well as [new cropped image](datasetpostprocess.md/#cropping) with facial close ups, we nudged back close to the v7 perspective with fuller face detail although the subject is not resting the lantern anymore on a foreground surface. It won't always be a similar frame or pose match when try to improve the dataset's quality or concept understandings, but we can correct unexpected behaviors when they surface and do fine tweaking along the way.
 
-Along with testing my own seeds and settings, I will also take prompts of other stable diffusion images I see in the wild to test how others would prompt on this model in hopes of finding tags prompts that don’t aren’t producing intended results so I can then note down to check on Hydrus. 
+Along with testing my own seeds and settings, I will also take prompts of other stable diffusion images I see in the wild and run it through this model to test how others prompting styles would translate on UDW's generations. If I finding tags and prompts that don’t work or aren’t producing intended results, I will take note of them to check in Hydrus. 

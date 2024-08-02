@@ -53,10 +53,13 @@ icon:material/update
         *   Tsukihime -A piece of blue glass moon-
             * <span style="font-size: 80%;">*Opening Animations*</span>
     *   Mobile
-        *   Tales of Asteria 
-            * <span style="font-size: 80%;">*ufotable assets only*</span>
-        *   Tales of Crestoria
-            * <span style="font-size: 80%;">*ufotable assets only*</span>
+        *   Fate Grand Order
+            *   [The Garden of Sinners] crossover event
+                * <span style="font-size: 80%;">*ufotable assets and promotional animation only*</span>
+            *   [Fate Zero] crossover event
+                * <span style="font-size: 80%;">*ufotable promotional animation only*</span>
+            *   [Fate Stay Night - Heaven's Feel] movie premiere promotions
+                * <span style="font-size: 80%;">*ufotable assets only*</span>
 
 ----
 
@@ -102,13 +105,10 @@ icon:material/update
         *   Tsukihime -A piece of blue glass moon-
             * <span style="font-size: 80%;">*Assembling non-ufotable in-game sprites and CG assets*</span>
     *   Mobile
-        *   Fate Grand Order
-            *   [The Garden of Sinners] crossover event
-                * <span style="font-size: 80%;">*ufotable assets and promotional animation only*</span>
-            *   [Fate Zero] crossover event
-                * <span style="font-size: 80%;">*ufotable promotional animation only*</span>
-            *   [Fate Stay Night - Heaven's Feel] movie premiere promotions
-                * <span style="font-size: 80%;">*ufotable assets only*</span>
+        *   Tales of Asteria 
+            * <span style="font-size: 80%;">*ufotable assets only*</span>
+        *   Tales of Crestoria
+            * <span style="font-size: 80%;">*ufotable assets only*</span>
 
 ----
 
