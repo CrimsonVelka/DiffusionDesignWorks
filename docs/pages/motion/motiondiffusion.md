@@ -31,12 +31,14 @@ While fortunate enough to have a 4090 and able to generate 768x512 clips, they s
     One other drawback to AnimateDiff is that outputs are generated in a very low bit gif format and around 8FPS by default, but you have access to all your generated frames at their maximum generated quality, so you could reanimate them in third party software or output into a better file container like mp4 or webm at higher quality clip at a better frame rate. 
 
 ----
-## Luma (and other AI Video platforms)
+## Competition
+
+### Luma
 
 Services like Luma do have a better quality to their video generations, even when generating off an image for Img2Vid. While short in length, they are still longer than animatediff and maintain better quality by default as far as the platform is doing additional work in background. 
 
 
-### Luma Img2Vid Examples
+#### Luma Img2Vid Examples
 
 *Starting Source Images*
 
@@ -68,7 +70,7 @@ Sometime this year, the developers of AnimateDiff disclosed their training metho
 
 ----
 
-## Theoretical Pipeline
+### Theoretical Pipeline
 
 Since specific tuning is not required, we are open to using more types of movies, recordings, and other animations not necessarily related to official films and shows or even the ones we are using. 
 
