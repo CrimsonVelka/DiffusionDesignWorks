@@ -1,7 +1,26 @@
 icon:material/update
-# Status Updates
+# Status Update + To Do List
 
-## To Do List (07/2024)
+## 08/2024
+
+### Content Update
+
+[![](./images/todolist/full/AEFigp5.jpeg)](./images/todolist/full/AEFigp5.jpeg)
+
+<span style="font-size: 90%;">*Fate/Stay Night 'Unlimited Blade Works' Character Complete Key Animations 1st - 2nd Season Comiket C88 Banner*</span>
+
+!!! Tip "The following content to be added to the next training - Source scanned in B/W instead of color, will replace."
+    *   Artbook
+        *   ufotable 
+            *   Fate/Stay Night 'Unlimited Blade Works' Character Complete Key Animations #00 · #01
+                * [Saber](./images/todolist/artbook/1182551.jpeg)
+                * [Archer](./images/todolist/artbook/1182553.jpeg) - <span style="font-size: 80%;">*[Illustration Card](./images/todolist/artbook/678218.jpg)*</span>
+                * [Toksaka Rin](./images/todolist/artbook/1182552.jpeg) - <span style="font-size: 80%;">*[Illustration Card](./images/todolist/artbook/678217.jpg)*</span>
+            *   Fate/Stay Night 'Unlimited Blade Works' Character Complete Key Animations 1st - 2nd Season
+                * [Lancer](./images/todolist/artbook/55C0AA984A2C740018.jpg)
+                * [Gilgamesh](./images/todolist/artbook/55C0AA964A025B0032.jpg)
+                
+## 07/2024
 
 ### Manual Review and Clean Up
 
@@ -130,7 +149,7 @@ icon:material/update
             *   [Fate/Stay Night 'Unlimited Blade Works' S1 - Settei Shiryoushuu (Setting Material) [Comiket 87]](./images/todolist/artbook/55C0AAA247644B001F.jpg)
             *   [Fate/Stay Night 'Unlimited Blade Works' S2- Settei Shiryoushuu (Setting Material) [Comiket 88]](./images/todolist/artbook/55C0AA9F470499000C.jpg)
             *   [Fate/Stay Night 'Unlimited Blade Works' Character Complete Key Animations [Comiket 87, 88, 89]](./images/todolist/artbook/55C0AA924A17CD0025.jpg)
-                *   <span style="font-size: 80%;">*There's 10 of these, very low priority in seeking out product or scans of it other than to obtain it's included lineart image. [#1](./images/todolist/artbook/686658.jpg), [#2](./images/todolist/artbook/678218.jpg)*</span>
+                *   <span style="font-size: 80%;">*There's 10 of these, very low priority in seeking out product or scans of it other than to obtain it's included lineart image. [#1](./images/todolist/artbook/686658.jpg), [#2](./images/todolist/artbook/686659.jpg)*</span>
 
 !!! failure "Waiting on releases for the following Ufotable Media:"
     *   Movies
