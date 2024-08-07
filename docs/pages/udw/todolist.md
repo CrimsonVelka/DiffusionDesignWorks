@@ -7,12 +7,14 @@ icon:material/update
 
 #### ufotable Key Animation Collections
 
+I ironically mentioned in a previous update that these Key Animations were likely going to be low priority in acquiring because there are too many of them, very expensive to obtain, and no cases I was aware of where anyone ever scanned their collection to show off these rare box sets... until about a couple days ago as of this writing. Someone scanned several the Sakuga (key animation frames) books. Unfortunately they were scanned in black and white, they should actually be colored, they also did not contain the illustration cards (I have some scans of them already) and some of them look like a mix batch between the 1st and 2nd collections. Nonetheless I will add them as is until I find the colored versions.
+
 [![](./images/todolist/full/AEFigp5.jpeg#only-light)](./images/todolist/full/AEFigp5.jpeg)
 [![](./images/todolist/full/AEFigp5.png#only-dark)](./images/todolist/full/AEFigp5.png)
 
 <span style="font-size: 80%;">*Fate/Stay Night 'Unlimited Blade Works' Character Complete Key Animations 1st - 2nd Season Comiket C88 Banner*</span>
 
-!!! Tip "The following content to be added to the next training - Source scanned in B/W instead of color, will replace."
+!!! Tip "The following content to be added to a future training:"
     *   Artbook
         *   ufotable 
             *   Fate/Stay Night 'Unlimited Blade Works' Character Complete Key Animations #00 · #01
