@@ -13,7 +13,7 @@ There are 3 additional processes I do to my dataset that combat either certain f
     
     * Novel AI created [Aspect Ratio Bucketing](https://github.com/NovelAI/novelai-aspect-ratio-bucketing) to allow training images to be outside 1:1 aspect resolutions, but the image is resized to fit within the 1:1 training resolution's pixel count
 
-    * Most enthusiasts’ LoRAs are still trained on 512x512 due to the averae person's hardware constraints but have Aspect Ratio Bucketing incorporated for varied training resolution sizes.
+    * Most enthusiasts’ LoRAs are still trained on 512x512 due to the averae person's hardware constraints but have [Aspect Ratio Bucketing incorporated for varied training resolution sizes](https://www.youtube.com/watch?v=0xswM8QYFD0).
 
 ## Layering
 

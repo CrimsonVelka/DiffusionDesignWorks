@@ -5,24 +5,35 @@ icon:material/update
 
 ### Content Update
 
-[![](./images/todolist/full/AEFigp5.jpeg)](./images/todolist/full/AEFigp5.jpeg)
+#### ufotable Key Animation Collections
 
-<span style="font-size: 90%;">*Fate/Stay Night 'Unlimited Blade Works' Character Complete Key Animations 1st - 2nd Season Comiket C88 Banner*</span>
+[![](./images/todolist/full/AEFigp5.jpeg#only-light)](./images/todolist/full/AEFigp5.jpeg)
+[![](./images/todolist/full/AEFigp5.png#only-dark)](./images/todolist/full/AEFigp5.png)
+
+<span style="font-size: 80%;">*Fate/Stay Night 'Unlimited Blade Works' Character Complete Key Animations 1st - 2nd Season Comiket C88 Banner*</span>
 
 !!! Tip "The following content to be added to the next training - Source scanned in B/W instead of color, will replace."
     *   Artbook
         *   ufotable 
             *   Fate/Stay Night 'Unlimited Blade Works' Character Complete Key Animations #00 · #01
-                * [Saber](./images/todolist/artbook/1182551.jpeg)
-                * [Archer](./images/todolist/artbook/1182553.jpeg) - <span style="font-size: 80%;">*[Illustration Card](./images/todolist/artbook/678218.jpg)*</span>
-                * [Toksaka Rin](./images/todolist/artbook/1182552.jpeg) - <span style="font-size: 80%;">*[Illustration Card](./images/todolist/artbook/678217.jpg)*</span>
+                * [Saber](./images/todolist/artbook/1182551.jpeg) - <span style="font-size: 80%;">*[Sakuga Sample](./images/todolist/artbook/keyframe/093.jpg)*</span>
+                * [Archer](./images/todolist/artbook/1182553.jpeg) - <span style="font-size: 80%;">*[Sakuga Sample](./images/todolist/artbook/keyframe/073.jpg)*</span> - <span style="font-size: 80%;">*[Illustration Card](./images/todolist/artbook/678218.jpg)*</span>
+                * [Toksaka Rin](./images/todolist/artbook/1182552.jpeg) - <span style="font-size: 80%;">*[Sakuga Sample](./images/todolist/artbook/keyframe/161.jpg)*</span> - <span style="font-size: 80%;">*[Illustration Card](./images/todolist/artbook/678217.jpg)*</span> 
             *   Fate/Stay Night 'Unlimited Blade Works' Character Complete Key Animations 1st - 2nd Season
-                * [Lancer](./images/todolist/artbook/55C0AA984A2C740018.jpg)
-                * [Gilgamesh](./images/todolist/artbook/55C0AA964A025B0032.jpg)
+                * [Lancer](./images/todolist/artbook/55C0AA984A2C740018.jpg) - <span style="font-size: 80%;">*[Sakuga Sample](./images/todolist/artbook/keyframe/008.jpg)*</span>
+                * [Gilgamesh](./images/todolist/artbook/55C0AA964A025B0032.jpg) - <span style="font-size: 80%;">*[Sakuga Sample](./images/todolist/artbook/keyframe/064.jpg)*</span>
+
+#### Dataset Experiment
+
+I'm also prepping a different kind of dataset samples for a Visual Novel that has almost fully animated sprites and cutscenes but are already seperated in frames. The game's engine would assemble all of the keyframes together in real time, so no need to frame extract the content, I will actually have to do the reverse engineer the scenes, mostly for motion model datasets to use for `Video2dataset` once UDW's next training is completed.
+
+Will also make a point to try and get some Visual Novel assets from Witch on the Holy Night and Tsukihime prepared as well. Introduce the other main Type Moon artist's (Hirokazu Koyama) character designs that will be adapted in a new movie with the former, and reinforce the modern Takeuchi character designs already adapted by ufotable with the latter. The goal is to improve clean sprite resolution depictions of characters and that can be blown up to larger resolutions, using their ultra high resolution sources images (1200x5400 for example) that can be resized down or chopped up to fit various form of image composition sizes and have data for up close detailing.
                 
 ## 07/2024
 
-### Manual Review and Clean Up
+### Content Updates
+
+#### Manual Review and Clean Up
 
 !!! info "The following content in the current model is undergoing quality control and clean up:"
     * Fate Zero
@@ -45,7 +56,7 @@ icon:material/update
             * <span style="font-size: 90%;">*re-extracted, deduped and sorted, undergoing post-processing. manual review need*</span>
 
 
-### Ready To Train
+#### Ready To Train
 
 [![](./images/todolist/thumb/Layer-3-Crop.png){: style="width:170px"}](./images/todolist//full/knk6.jpg)
 [![](./images/todolist/thumb/Layer-2-Crop.png){: style="width:170px"}](./images/todolist/full/tozx.jpg)
@@ -82,7 +93,7 @@ icon:material/update
 
 ----
 
-### In Progress
+#### In Progress
 
 [![](./images/todolist/thumb/Layer-5-Crop.png){: style="width:170px"}](./images/todolist//full/tsukire.jpg)
 [![](./images/todolist/thumb/Layer-6-Crop.png){: style="width:170px"}](./images/todolist/full/mahoyofull.png)
@@ -131,7 +142,7 @@ icon:material/update
 
 ----
 
-### TBD
+#### TBD
 
 !!! failure "Waiting on USM decryption for the following games to frame extract cutscenes"
     *   Video Games
