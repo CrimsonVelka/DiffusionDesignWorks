@@ -89,7 +89,7 @@ nav:
       - 'Post Processing': pages/udw/datasetpostprocess.md
       - 'Troubleshooting Flaws': pages/udw/flaws.md 
   - Motion Model Diffusion:
-      - 'AnimateDiff Overview': pages/motion/motiondiffusion.md
+      - 'Overview': pages/motion/motiondiffusion.md
       - 'Local Training': pages/motion/localtraining.md
   - Updates:
       - 'Status Updates': pages/udw/todolist.md

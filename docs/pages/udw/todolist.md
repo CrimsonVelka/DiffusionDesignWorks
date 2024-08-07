@@ -30,7 +30,9 @@ I ironically mentioned in a previous update that these Key Animations were likel
 I'm also preparing a different kind of dataset sample from a Visual Novel that has almost fully animated sprites and cutscenes but are already seperated in frames. The game's engine would assemble all of the keyframes together in real time, so no need to frame extract the content. I would have to reassemble and animate the the scenes if I want to add it for the motion model's dataset when I attempt the finetune once UDW's next training is completed.
 
 Will also make a point to try and get some Visual Novel assets from Witch on the Holy Night and Tsukihime prepared for this next training. Introduce the other main Type Moon artist's (Hirokazu Koyama) character designs that will be adapted in a new movie with the former, and reinforce the modern Takeuchi character designs already adapted by ufotable with the latter. The goal is to improve clean sprite resolution depictions of characters and that can be blown up to larger resolutions, using their ultra high resolution sources images (1200x5400 for example) that can be resized down or chopped up to fit various form of image composition sizes and have data for up close detailing.
-                
+
+---
+
 ## 07/2024
 
 ### Content Updates

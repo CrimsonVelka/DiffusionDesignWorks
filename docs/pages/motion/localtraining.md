@@ -1,4 +1,5 @@
-#Local Training of AnimeateDiff
+icon:fontawesome/solid/network-wired
+# Local Training of AnimeateDiff
 
 ## Homebrew Potential
 
@@ -8,7 +9,7 @@ Sometime this year, the developers of AnimateDiff disclosed their training metho
 
 ----
 
-### Theoretical Pipeline
+## Theoretical Pipeline
 
 Since specific tuning is not required, we are open to using more types of movies, recordings, and other animations not necessarily related to official films and shows or even the ones we are using. 
 

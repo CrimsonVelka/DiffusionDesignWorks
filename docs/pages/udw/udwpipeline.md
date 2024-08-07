@@ -1,7 +1,7 @@
 icon:material/pipe
 # Pipeline Workflow
 
-## Modifying a preset repo to handle an unexpected developments
+## Evolving from a Preset Repo
 
 After several successful model trainings, I had become dissatisfied with the quality of the dataset I originally produced with [Anime Screenshot Pipeline](https://github.com/cyber-meow/anime_screenshot_pipeline). It had some short commings with the quality of data and some steps and scripting were unnecessary for what I needed. Through repurposing and editing some of tools and scripts, I began redoing the entire dataset from once I got comfortable with the entire training process. By the time I reached my current workflow and results, my pipeline workflow looks unrecognizable to even the developer's current version of the process. There is some more manual steps involved but not from lack of ability, but rather the need of human supervision in so places where automation is not yet up to the task.
 
@@ -22,7 +22,9 @@ After several successful model trainings, I had become dissatisfied with the qua
     
     * Very large Hard Drive space required
 
-## Frame Extraction 
+---
+
+### Frame Extraction 
 
 The first change I made to the pipeline was the [`ffmpeg`](https://www.ffmpeg.org/) script provided. The Pipeline used a script that would run the mpdecimate command to remove duplicate or “frozen frames”, moments in the animation where there is no movement, as `ffmpeg` is “extracting” the frames to condense down the frames to a final output around one tenth of the original size. Then a secondary filter using a computer vision model through a Jupyter script using `FiftyOne` would do one last sweep of any frozen frames mpdecimate would've missed to reduce the file size even further.
 
@@ -50,7 +52,9 @@ The downside to this new method is that increased use of hard drive space from n
 
 This situation would force me to start buying hard drives and to looking into NAS solutions to hold all this data, but it did also present a way to schedule when to start manual reviewing the datasets, as this would free almost enough space to frame extract another episode and give some breathing room before going out to buy more storage.
 
-## Tagging
+---
+
+### Tagging
 
 Stable Diffusion base models use CLIP captioning to tag their datasets with natural language for prompt keywords. NovelAI’s anime finetune of SD1.4 instead used English based Japanese imageboard site Danbooru’s key word tagging format for prompting instruction. This is because Novel AI's parent company, Anlatan, scrapped Danbooru's site for all the images used in the training of their model, and used their metadata as the standard for prompting their model. Because it seemed that keyword prompting performed better than just pure natural language, and the tool creators made popular tools for anime trainers based on NovelAI's content, future dreambooths, LoRA networks, and other checkpoints types followed this format for not just anime, but realism models as well.
 
@@ -72,7 +76,7 @@ I initially used the built in Automatic1111 tagger when starting out making Text
 
 The 16:9 ratio confused the classifiers and produced a high amount of false positives tagging character subjects onto all sorts of images that were not character focused; such as scenery shots, item focus shots, transitioning scenes, logos and texts, panning of the environment before a subject walks into the shot, a magical explosion on screen. This incorrect info resulted in generations similar to the ones above, subjects would not appear in the image, or would appear fused into parts of a scenery, special effects shots or be embeded with them, or images with empty settings that look like should've contained someone in it. 
 
-### Face Detector for fixing character tags
+#### Face Detector for fixing character tags
 
 The solution I arrived at was repurposing the [anime face detection tool](https://github.com/hysts/anime-face-detector) used in the github pipeline, which detects passable images of characters and then creates 1:1 crop stamps of their face for a dataset. Per the github, "The model detects near-frontal anime faces and predicts 28 landmark points", meaning that it will use these predefine facial points to detect faces on all images in a directory and give each image a scoring threshold, of which it will give it a passing detection or not. I modified the script to have it make duplicates of all images that pass the face detection threshold into a different folder instead of creating cropped images. These images will be imported after the inital dataset import to my [image organizer](#hydrus) is completed. I will bulk delete all the subject tags from the initial images and then import the passing copied images with the subject tags still intact and it will update the ones already on file. 
 
@@ -83,11 +87,15 @@ The solution I arrived at was repurposing the [anime face detection tool](https:
 
 My first training after using this method instantly fixed the prompting of subjects. A quick skim of the images that passed the face detection threshold show no signs of false positives, and there is no issue if there are cases of false negatives, as manual review will take care of anything that were missed. Other miscellaneous improves I used for this phase include an autotagger aggregate that will tag based on the average of 3 or more classifiers running concurrently and has the tagging of copyright names removed just so that I reduce false positive tags of characters that don’t belong in the content from being erroneously introduced. 
 
-## Dataset Organization and Preparation
+---
 
-### Hydrus
+### Dataset Organization and Preparation
 
-While dedicated image organizers for stable diffusion datasets are available, I elected with using an obscure desktop application called [Hydrus Network](https://hydrusnetwork.github.io/hydrus/index.html). Created in the early 2010s for the purpose of organizing large media collections (of internet memes and other s#!tposts) under a single location with various customizable categories coincidentally modeled after the format of imageboards such as Danbooru. The media is tabulated based on file hash rather than whatever the file is named as. This aspect synergizes not only with how the datasets need to be tagged if following the Booru/NovelAI format, but with how my organization scripts operates on file hash values when sorting unique frames out, as well as how I incorporate face detection copies of images with correct subject tagging.
+#### Hydrus
+
+While dedicated image organizers for stable diffusion datasets are available, I elected with using an niche desktop application called [Hydrus Network](https://hydrusnetwork.github.io/hydrus/index.html). Created in the early 2010s for the purpose of organizing large media collections (of internet memes and other s#!tposts) under a single location with various customizable categories, their features were coincidentally modeled after the format of imageboards such as Danbooru, same as Novel AI. 
+
+The media is tabulated based on file hash rather than whatever the file is named as. This aspect synergizes not only with how the datasets need to be tagged if following the Booru/NovelAI format, but with how my organization scripts operates on file hash values when sorting unique frames out, as well as how I incorporate face detection copies of images with correct subject tagging.
 
 [![](./images/Pipeline/Hydrus3.png){: style="width:680px"}](./images/Pipeline/Hydrus3.png)
 
@@ -104,7 +112,9 @@ Once the first import is complete, I will select the entire batch and edit their
 From here I can proactively check any tags I may have previously had issues with and search for all images by that tag, remove tags if incorrect, maybe even delete images that could be seen as bad data, and overall just skim that the frames I did get were satisfactory.
 I will repeat this process with all new dataset batches I make until the model is ready to train. From here I can use the Hydrus metadata I included to only select a specific range of data that is ready to go and it will export a new set of copies with sidecar txt files that the trainer will need to associate the tags and images.
 
-## Kohya Trainer
+---
+
+### Finetune Training
 
 !!! info "Things to note before continuing:"
 
@@ -122,6 +132,8 @@ I will repeat this process with all new dataset batches I make until the model i
     
     * Due to the above, I focused more on gathering the dataset and do as much quality work as I could before committing to a very lengthy training session.
 
+#### Kohya SD Scripts
+
 Japanese developer Kohya-SS’ [SD Script](https://github.com/kohya-ss/sd-scripts) package is an older but consistent training package. While it mostly supports LoRA and other network-based checkpoint trainings, it still supports full finetune training for SD1.x and XL checkpoints. It only needs to be pointed to a training directory, will check the main training folder and the regulation folder if enabled, and will then just follow the training parameters set in the powershell script and output the checkpoint when done. 
 
 [![](./images/Pipeline/sdbuckets.JPG){: style="width:680px"}](./images/Pipeline/sdbuckets.JPG)
@@ -130,7 +142,9 @@ Japanese developer Kohya-SS’ [SD Script](https://github.com/kohya-ss/sd-script
 
 The default training settings are borrowed from the NAI training settings and includes the aspect ratio bucketing so the resolution sizes are not restricted to 1:1 aspect image, but resolution size will be dictated by hardware used for training so its defaulted to 512x512 but can be adjusted to be higher such as 1024x1024 like SDXL.
 
-## Post Training Review
+---
+
+### Post Training Review
 After the model is trained, I will run several “templates” to test changes between a previous version of the model compared to the current one. I will note if there are any visual improvements, changes in the look of backgrounds, character feature consistencies, detail in non-upscaled generations, and if any errors I caught in the previous cycle were fixed. 
 
 [![](./images/Pipeline/v7.png){: style="width:226px"}](./images/Pipeline/v7.png)
@@ -142,3 +156,5 @@ After the model is trained, I will run several “templates” to test changes b
 Per the example, you can see that v8's default frame changed quite a bit to portray the subject farther away or smaller. After some tag correction in the the image composition category (Portrait/Face, Upper Body, Cowboy Shot, Full Body, etc) and some new data with preemptive composition tagging, as well as [new cropped image](datasetpostprocess.md/#cropping) with facial close ups, we nudged back close to the v7 perspective with fuller face detail although the subject is not resting the lantern anymore on a foreground surface. It won't always be a similar frame or pose match when try to improve the dataset's quality or concept understandings, but we can correct unexpected behaviors when they surface and do fine tweaking along the way.
 
 Along with testing my own seeds and settings, I will also take prompts of other stable diffusion images I see in the wild and run it through this model to test how others prompting styles would translate on UDW's generations. If I finding tags and prompts that don’t work or aren’t producing intended results, I will take note of them to check in Hydrus. 
+
+---
