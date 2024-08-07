@@ -84,12 +84,13 @@ nav:
   - About:
       - 'Introduction': About.md
   - Unlimited Diffusion Works:
-      - 'UDW Overview': pages/udw/udwmodel.md
+      - 'Overview': pages/udw/udwmodel.md
       - 'Pipeline': pages/udw/udwpipeline.md
       - 'Post Processing': pages/udw/datasetpostprocess.md
       - 'Troubleshooting Flaws': pages/udw/flaws.md 
   - Motion Model Diffusion:
       - 'AnimateDiff Overview': pages/motion/motiondiffusion.md
+      - 'Local Training': pages/motion/localtraining.md
   - Updates:
       - 'Status Updates': pages/udw/todolist.md
       - 'Lessons Learned': pages/faq/lessonslearned.md

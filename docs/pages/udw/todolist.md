@@ -7,7 +7,7 @@ icon:material/update
 
 #### ufotable Key Animation Collections
 
-I ironically mentioned in a previous update that these Key Animations were likely going to be low priority in acquiring because there are too many of them, very expensive to obtain, and no cases I was aware of where anyone ever scanned their collection to show off these rare box sets... until about a couple days ago as of this writing. Someone scanned several the Sakuga (key animation frames) books. Unfortunately they were scanned in black and white, they should actually be colored, they also did not contain the illustration cards (I have some scans of them already) and some of them look like a mix batch between the 1st and 2nd collections. Nonetheless I will add them as is until I find the colored versions.
+I ironically mentioned in a previous update that these Key Animations were likely going to be low priority in acquiring because there are too many of them, very expensive to obtain, and no cases I was aware of where anyone ever scanned their collection to show off these rare box sets... until about a couple days ago as of this writing. Someone scanned several of these animation key frames books. Unfortunately they were scanned in [black and white](./images/todolist/artbook/keyframe/092.jpg), they should actually be [partially colored](./images/todolist/artbook/keyframe/UwZjAmaV.jpeg) to denote color separation and shading. The scans also did not contain the illustration cards, but I had some scans of them already, and some of the frames look like they came from another set of collections, but still match the theme. Nonetheless I will add them as they are absurdly high resolution with clear detailing, until I find the colored versions.
 
 [![](./images/todolist/full/AEFigp5.jpeg#only-light)](./images/todolist/full/AEFigp5.jpeg)
 [![](./images/todolist/full/AEFigp5.png#only-dark)](./images/todolist/full/AEFigp5.png)
@@ -18,18 +18,18 @@ I ironically mentioned in a previous update that these Key Animations were likel
     *   Artbook
         *   ufotable 
             *   Fate/Stay Night 'Unlimited Blade Works' Character Complete Key Animations #00 · #01
-                * [Saber](./images/todolist/artbook/1182551.jpeg) - <span style="font-size: 80%;">*[Sakuga Sample](./images/todolist/artbook/keyframe/093.jpg)*</span>
-                * [Archer](./images/todolist/artbook/1182553.jpeg) - <span style="font-size: 80%;">*[Sakuga Sample](./images/todolist/artbook/keyframe/073.jpg)*</span> - <span style="font-size: 80%;">*[Illustration Card](./images/todolist/artbook/678218.jpg)*</span>
-                * [Toksaka Rin](./images/todolist/artbook/1182552.jpeg) - <span style="font-size: 80%;">*[Sakuga Sample](./images/todolist/artbook/keyframe/161.jpg)*</span> - <span style="font-size: 80%;">*[Illustration Card](./images/todolist/artbook/678217.jpg)*</span> 
+                * [Saber](./images/todolist/artbook/1182551.jpeg) - <span style="font-size: 80%;">*[Sample](./images/todolist/artbook/keyframe/093.jpg)*</span>
+                * [Archer](./images/todolist/artbook/1182553.jpeg) - <span style="font-size: 80%;">*[Sample](./images/todolist/artbook/keyframe/073.jpg)*</span> - <span style="font-size: 80%;">*[Illustration Card](./images/todolist/artbook/678218.jpg)*</span>
+                * [Toksaka Rin](./images/todolist/artbook/1182552.jpeg) - <span style="font-size: 80%;">*[Sample](./images/todolist/artbook/keyframe/161.jpg)*</span> - <span style="font-size: 80%;">*[Illustration Card](./images/todolist/artbook/678217.jpg)*</span> 
             *   Fate/Stay Night 'Unlimited Blade Works' Character Complete Key Animations 1st - 2nd Season
-                * [Lancer](./images/todolist/artbook/55C0AA984A2C740018.jpg) - <span style="font-size: 80%;">*[Sakuga Sample](./images/todolist/artbook/keyframe/008.jpg)*</span>
-                * [Gilgamesh](./images/todolist/artbook/55C0AA964A025B0032.jpg) - <span style="font-size: 80%;">*[Sakuga Sample](./images/todolist/artbook/keyframe/064.jpg)*</span>
+                * [Lancer](./images/todolist/artbook/55C0AA984A2C740018.jpg) - <span style="font-size: 80%;">*[Sample](./images/todolist/artbook/keyframe/008.jpg)*</span>
+                * [Gilgamesh](./images/todolist/artbook/55C0AA964A025B0032.jpg) - <span style="font-size: 80%;">*[Sample](./images/todolist/artbook/keyframe/064.jpg)*</span>
 
 #### Dataset Experiment
 
-I'm also prepping a different kind of dataset samples for a Visual Novel that has almost fully animated sprites and cutscenes but are already seperated in frames. The game's engine would assemble all of the keyframes together in real time, so no need to frame extract the content, I will actually have to do the reverse engineer the scenes, mostly for motion model datasets to use for `Video2dataset` once UDW's next training is completed.
+I'm also preparing a different kind of dataset sample from a Visual Novel that has almost fully animated sprites and cutscenes but are already seperated in frames. The game's engine would assemble all of the keyframes together in real time, so no need to frame extract the content. I would have to reassemble and animate the the scenes if I want to add it for the motion model's dataset when I attempt the finetune once UDW's next training is completed.
 
-Will also make a point to try and get some Visual Novel assets from Witch on the Holy Night and Tsukihime prepared as well. Introduce the other main Type Moon artist's (Hirokazu Koyama) character designs that will be adapted in a new movie with the former, and reinforce the modern Takeuchi character designs already adapted by ufotable with the latter. The goal is to improve clean sprite resolution depictions of characters and that can be blown up to larger resolutions, using their ultra high resolution sources images (1200x5400 for example) that can be resized down or chopped up to fit various form of image composition sizes and have data for up close detailing.
+Will also make a point to try and get some Visual Novel assets from Witch on the Holy Night and Tsukihime prepared for this next training. Introduce the other main Type Moon artist's (Hirokazu Koyama) character designs that will be adapted in a new movie with the former, and reinforce the modern Takeuchi character designs already adapted by ufotable with the latter. The goal is to improve clean sprite resolution depictions of characters and that can be blown up to larger resolutions, using their ultra high resolution sources images (1200x5400 for example) that can be resized down or chopped up to fit various form of image composition sizes and have data for up close detailing.
                 
 ## 07/2024
 
