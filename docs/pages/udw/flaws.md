@@ -1,5 +1,5 @@
 icon:material/hammer-wrench
-# Troubleshooting Flaws and Challenges to Overcome
+# Troubleshoot, Flaws, and Challenges
 
 Despite everything I picked up and what I managed to accomplished on my own, there are still shortcomings due to time, in need of more experience, and inability to upscale my resources to continue gaining experience. 
 
