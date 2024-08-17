@@ -26,7 +26,7 @@ While in total its around 115k more frames between the 3 game's animations, real
 
 #### Fate Stay Night + [Realta Nua] 20th Anniversary Remastered Update
 
-Found out that they included the 1080p versions of the opening cutscenes that were only in 960x544 quality on the Playstation Vita version of the release so I have now have those fully extracted the 1080p rips and deleted the old one Vita ones I dumped from the ROM. And after a quick look at the FGO stuff, I'm gonna hold off on adding the ufotable commercial promos and just include the in-game art they drew. The commercials are YouTube rips so I'm at the mercy of YT's encoding being decent at higher quality... its not.
+Found out that they included the 1080p versions of the opening cutscenes that were only in 960x544 quality on the Playstation Vita version of the release so I now have those fully extracted and deleted the old Vita ones I dumped from the ROM last year. And after a quick look at the FGO stuff, I'm gonna hold off on adding the ufotable commercial promos and just include the in-game art they drew. The commercials are just YouTube rips so I'm at the mercy of YT's encoding being decent at higher quality... its not.
 
 ----
 
