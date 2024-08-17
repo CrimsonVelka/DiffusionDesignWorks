@@ -10,6 +10,8 @@ Unlimited Diffusion Works is a model based on the works of animation studio ufot
 
 This model will focus on their studio's adaptations of works by Type-Moon, and will include their collaborations on series produced by Namco Bandai, to have a set level of character design, color grading, quality consistency.
 
+----
+
 ## Dataset
 
 [![](./images/overview/dataset/thumb/knkekv1-thumb.png){: style="width:170px"}](./images/overview/dataset/full/knkekv1.jpg)
@@ -19,6 +21,8 @@ This model will focus on their studio's adaptations of works by Type-Moon, and w
 
 
 This model’s current version was trained on 09/2023, with around 200k images finetuned over NovelAI v1, uses the following content from studio ufotable:
+
+### Media
 
 !!! abstract "ufotable sources"
     
@@ -35,15 +39,15 @@ This model’s current version was trained on 09/2023, with around 200k images f
         * 2 - lost butterfly
         * 3 - spring song
 
-In addition to ufotable, I added for experimentation purposes content from the following non-ufotable works for additional data and regularization purposes:
-
-!!! abstract "Non-themed sources"
-    * Lord El-Melloi II Case Files (studio TROYCA)
-    * *additional miscellaneous non-animation data*
-
-
 The original dataset was created by running Blu-ray rips of the listed content through ffmpeg as part of the aid of [Anime Screenshot Pipeline](https://github.com/cyber-meow/anime_screenshot_pipeline) on Github back in February of 2023. But I have since used [my own workflow pipeline processes](./udwpipeline.md) and modified or used new tools to improve the training and creation of the current model back in 09/2023.
 
+#### Media Source
+
+I chose Blu-Rays rather than WEBRips or broadcast recordings because the bitrate of the transmition plus recording software's encoding methods harm the visual quality of the content and those imperfections will be trained onto the model. Demuxing the BluRay ensures that I have the highest quality source for the frames I will be extracting. It's also worth noting not every Blu-Ray release is good, and sometimes a different region's BluRay release (ITA and GER notably) may have a cleaned up and better encoded file made by that publisher pressed onto their discs to produce a much better visual than the original JP or ENG (which is sometimes just the same JP) Blurays but can take months or even a full year after the first regions have been released and sold. 
+
+I have used a mixture of different regional Blu-Ray discs based on what other conesours have considered to be the best version available for each of the above series.
+
+----
 
 ## Sample Gallery
 

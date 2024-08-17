@@ -1,7 +1,9 @@
 icon:material/account-box-edit-outline
 # Dataset Post-Processing
 
-There are 3 additional processes I do to my dataset that combat either certain flaws in the dataset, cleaning up data that could have production mistakes or bothersome editing choices, and maximize the amount of detail of specific shots or scenes: Layering, Cropping, and Stitching.
+## Overview
+
+There are 3 additional processes I do to my dataset that attempt to fix certain flaws in the dataset, cleaning up data that could have production mistakes or bothersome editing choices, and maximize the amount of detail of specific shots or scenes: Layering, Cropping, and Stitching.
 
 !!! info "Things to note before continuing:"
     
@@ -15,7 +17,7 @@ There are 3 additional processes I do to my dataset that combat either certain f
 
     * Most enthusiasts’ LoRAs are still trained on 512x512 due to the averae person's hardware constraints but have [Aspect Ratio Bucketing incorporated for varied training resolution sizes](https://www.youtube.com/watch?v=0xswM8QYFD0).
 
-## Layering
+### Layering
 
 [![](./images/datasetpostprocess/Layering/KnK-Scene.gif){: style="width:680px"}](./images/datasetpostprocess/Layering/KnK-Scene.gif)
 
@@ -38,7 +40,7 @@ Then the original frames are reintroduced into the dataset with the frames creat
 
 ----
 
-## Stitching
+### Stitching
 
 [![](./images/datasetpostprocess/Stitching/Scene/fz-excaliblast.gif){: style="width:340px"}](./images/datasetpostprocess/Stitching/Scene/fz-excaliblast.gif)
 [![](./images/datasetpostprocess/Stitching/Scene/fsn-redman.gif){: style="width:340px"}](./images/datasetpostprocess/Stitching/Scene/fsn-redman.gif)
@@ -63,7 +65,7 @@ In any sort of motion picture, you will get scenes where the camera is panning f
 
 ----
 
-## Cropping
+### Cropping
 
 [![](./images/datasetpostprocess/Cropping/Scene/hf-sakuraupset.gif){: style="width:340px"}](./images/datasetpostprocess/Cropping/Scene/hf-sakuraupset.gif)
 [![](./images/datasetpostprocess/Cropping/Scene/hf-iliyaspin.gif){: style="width:340px"}](./images/datasetpostprocess/Cropping/Scene/hf-iliyaspin.gif)
@@ -79,6 +81,6 @@ This crop and resizing down of the full images however will cause a loss in deta
 
 <span style="font-size: 80%;">*Expressions made into individual cropped images*</span>
 
-To remedy this, I also include sizable amount of 1:1 aspect images. These focus on facial expressions, certain detail focus shots of objects and items, character’s extremities to improve hand and finger accuracy, or close ups of clothing and/or patterns. I will also use this on the same frames of stitches I created, if possible, to also preserve those details of panning shots. The 1:1 aspect images also help in reducing overfit from the main resolution.
+To remedy this, I also include sizable amount of 1:1 aspect images. These focus on facial expressions, certain detail focus shots of objects and items, character’s extremities to improve hand and finger accuracy, or close ups of clothing and/or patterns. I will also use this on the same frames of stitches I created, if possible, to also preserve those details of panning shots. The 1:1 aspect images also help in reducing overfit from the main resolution. These 1:1 crops are almost always 1080x, so they were made with future training at SDXL resolution (or 1080x1080!) in mind.
 
 ----

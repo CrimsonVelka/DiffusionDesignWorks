@@ -24,6 +24,10 @@ Someone finally took the time to decrypt Tales of Arise's USM key, so I was able
 
 While in total its around 115k more frames between the 3 game's animations, realistically maybe only 30k will make the final cut in the final model.
 
+#### Fate Stay Night + [Realta Nua] 20th Anniversary Remastered Update
+
+Found out that they included the 1080p versions of the opening cutscenes that were only in 960x544 quality on the Playstation Vita version of the release so I have now have those fully extracted the 1080p rips and deleted the old one Vita ones I dumped from the ROM. And after a quick look at the FGO stuff, I'm gonna hold off on adding the ufotable commercial promos and just include the in-game art they drew. The commercials are YouTube rips so I'm at the mercy of YT's encoding being decent at higher quality... its not.
+
 ----
 
 #### ufotable Key Animation Collections
@@ -43,8 +47,7 @@ While in total its around 115k more frames between the 3 game's animations, real
                 * [Lancer](./images/todolist/artbook/55C0AA984A2C740018.jpg) - <span style="font-size: 80%;">*[Sample](./images/todolist/artbook/keyframe/008.jpg)*</span>
                 * [Gilgamesh](./images/todolist/artbook/55C0AA964A025B0032.jpg) - <span style="font-size: 80%;">*[Sample](./images/todolist/artbook/keyframe/064.jpg)*</span>
 
-I ironically mentioned in a previous update that these Key Animations were likely going to be low priority in acquiring because there are too many of them, very expensive to obtain, and no cases I was aware of where anyone ever scanned their collection to show off these rare box sets... until about a couple days ago as of this writing. Someone scanned several of these animation key frames books. Unfortunately they were scanned in [black and white](./images/todolist/artbook/keyframe/092.jpg), they should actually be [partially colored](./images/todolist/artbook/keyframe/UwZjAmaV.jpeg) to denote color separation and shading. The scans also did not contain the illustration cards, but I had some scans of them already, and some of the frames look like they came from another set of collections, but still match the theme. Nonetheless I will add them as they are absurdly high resolution with clear detailing, until I find the colored versions.
-
+I ironically mentioned in a previous update that these Key Animations were likely going to be low priority in acquiring because there are too many of them, very expensive to obtain, and no cases I was aware of where anyone ever scanned their collection to show off these rare box sets... until about a couple days ago as of this writing. Someone scanned several of these animation key frames books. Unfortunately they were scanned in [black and white](./images/todolist/artbook/keyframe/092.jpg), they should actually be [partially colored](./images/todolist/artbook/keyframe/UwZjAmaV.jpeg) to denote color separation and shading. The scans also did not contain the [illustration cards](./images/todolist/artbook/686658.jpg), but [I had some scans of them already](./images/todolist/artbook/686659.jpg). Some of the frames look like they came from another collection sets, but still match the theme so I will still add them as they are absurdly high resolution with clear detailing, until I find the colored versions.
 
 #### Dataset Experiment
 
@@ -180,7 +183,7 @@ Will also make a point to try and get some Visual Novel assets from Witch on the
             *   [Fate/Stay Night 'Unlimited Blade Works' S1 - Settei Shiryoushuu (Setting Material) [Comiket 87]](./images/todolist/artbook/55C0AAA247644B001F.jpg)
             *   [Fate/Stay Night 'Unlimited Blade Works' S2- Settei Shiryoushuu (Setting Material) [Comiket 88]](./images/todolist/artbook/55C0AA9F470499000C.jpg)
             *   [Fate/Stay Night 'Unlimited Blade Works' Character Complete Key Animations [Comiket 87, 88, 89]](./images/todolist/artbook/55C0AA924A17CD0025.jpg)
-                *   <span style="font-size: 80%;">*There's 10 of these, very low priority in seeking out product or scans of it other than to obtain it's included lineart image. [#1](./images/todolist/artbook/686658.jpg), [#2](./images/todolist/artbook/686659.jpg)*</span>
+                *   <span style="font-size: 80%;">*There's 10 of these, very low priority in seeking out product or scans of it other than to obtain it's included lineart image.*</span>
 
 !!! failure "Waiting on releases for the following Ufotable Media:"
     *   Movies
