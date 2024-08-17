@@ -5,15 +5,33 @@ icon:material/update
 
 ### Content Update
 
-#### ufotable Key Animation Collections
+#### Tales of Series - (8/16/04)
 
-I ironically mentioned in a previous update that these Key Animations were likely going to be low priority in acquiring because there are too many of them, very expensive to obtain, and no cases I was aware of where anyone ever scanned their collection to show off these rare box sets... until about a couple days ago as of this writing. Someone scanned several of these animation key frames books. Unfortunately they were scanned in [black and white](./images/todolist/artbook/keyframe/092.jpg), they should actually be [partially colored](./images/todolist/artbook/keyframe/UwZjAmaV.jpeg) to denote color separation and shading. The scans also did not contain the illustration cards, but I had some scans of them already, and some of the frames look like they came from another set of collections, but still match the theme. Nonetheless I will add them as they are absurdly high resolution with clear detailing, until I find the colored versions.
+[![](./images/todolist/thumb/ToA_OP1_2228.png){: style="width:340px"}](./images/todolist/thumb/ToA_OP1_2228.png)
+[![](./images/todolist/thumb/ToA_OP1_1178.png){: style="width:340px"}](./images/todolist/thumb/ToA_OP1_1178.png)
+[![](./images/todolist/thumb/ToA_OP1_1772.png){: style="width:340px"}](./images/todolist/thumb/ToA_OP1_1772.png)
+[![](./images/todolist/thumb/ToA_OP1_1793.png){: style="width:340px"}](./images/todolist/thumb/ToA_OP1_1793.png)
+
+<span style="font-size: 80%;">*Frames from Tales of Arise Opening #1*</span>
+
+!!! success "The following content will be included in the next training session - minimal manual edits only:"
+    *   Video Games - <span style="font-size: 80%;">*Opening Animations and Cutscenes only*</span> 
+        *   Tales of Xillia I
+        *   Tales of Xillia II
+        *   Tales of Arise      
+
+Someone finally took the time to decrypt Tales of Arise's USM key, so I was able to use it to demux the files I had on stand by and took the opportunity to work on extracting Arise plus organize Xillia 1 & 2 to add onto the next training. Won't do a big clean, just a quick dedup and yank out any bad looking frames just to see how more of Akira Matsushima (Chief Animation Direction and Animation Character Designer for Xillia, Zestiria The Cross, and Arise) would change up some lacking blind spots in the data.
+
+While in total its around 115k more frames between the 3 game's animations, realistically maybe only 30k will make the final cut in the final model.
+
+----
+
+#### ufotable Key Animation Collections
 
 [![](./images/todolist/full/AEFigp5.jpeg#only-light)](./images/todolist/full/AEFigp5.jpeg)
 [![](./images/todolist/full/AEFigp5.png#only-dark)](./images/todolist/full/AEFigp5.png)
 
 <span style="font-size: 80%;">*Fate/Stay Night 'Unlimited Blade Works' Character Complete Key Animations 1st - 2nd Season Comiket C88 Banner*</span>
-
 !!! Tip "The following content to be added to a future training:"
     *   Artbook
         *   ufotable 
@@ -24,6 +42,9 @@ I ironically mentioned in a previous update that these Key Animations were likel
             *   Fate/Stay Night 'Unlimited Blade Works' Character Complete Key Animations 1st - 2nd Season
                 * [Lancer](./images/todolist/artbook/55C0AA984A2C740018.jpg) - <span style="font-size: 80%;">*[Sample](./images/todolist/artbook/keyframe/008.jpg)*</span>
                 * [Gilgamesh](./images/todolist/artbook/55C0AA964A025B0032.jpg) - <span style="font-size: 80%;">*[Sample](./images/todolist/artbook/keyframe/064.jpg)*</span>
+
+I ironically mentioned in a previous update that these Key Animations were likely going to be low priority in acquiring because there are too many of them, very expensive to obtain, and no cases I was aware of where anyone ever scanned their collection to show off these rare box sets... until about a couple days ago as of this writing. Someone scanned several of these animation key frames books. Unfortunately they were scanned in [black and white](./images/todolist/artbook/keyframe/092.jpg), they should actually be [partially colored](./images/todolist/artbook/keyframe/UwZjAmaV.jpeg) to denote color separation and shading. The scans also did not contain the illustration cards, but I had some scans of them already, and some of the frames look like they came from another set of collections, but still match the theme. Nonetheless I will add them as they are absurdly high resolution with clear detailing, until I find the colored versions.
+
 
 #### Dataset Experiment
 
@@ -147,11 +168,6 @@ Will also make a point to try and get some Visual Novel assets from Witch on the
 ----
 
 #### TBD
-
-!!! failure "Waiting on USM decryption for the following games to frame extract cutscenes"
-    *   Video Games
-        *   Tales of Arise
-            *   <span style="font-size: 80%;">*Have usm video files on standby*</span>
 
 !!! failure "Awaiting sale or alternate source for follow collections"
     *   Artbook
